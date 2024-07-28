@@ -8,6 +8,12 @@ def evaluate_ratios(ratios_df):
     print(ratios_df)
 
 def main():
+    """
+    Main function to load calculated financial ratios, evaluate them
+
+    Parameters:
+    None
+    """
     ticker = 'AAPL'
     year = '2023'
     
@@ -16,8 +22,6 @@ def main():
     
     # Evaluate the financial ratios
     evaluate_ratios(ratios_df)
-    
-    print("Financial ratios evaluation complete.")
 
 if __name__ == "__main__":
     main()
