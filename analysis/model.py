@@ -26,9 +26,6 @@ def main():
     
     Parameters:
     None
-
-    Returns:
-    None
     """
     ticker = 'AAPL'
     year = '2023'
