@@ -1,0 +1,17 @@
+﻿attribute_name,description,data_type,example_value,unit
+otal_revenue,Total revenue of the company for the period,float,64727000000,USD
+total_expenses,Total expenses of the company for the period,float,36802000000,USD
+net_income,Net income of the company for the period,float,22036000000,USD
+free_cash_flow,Free cash flow of the company for the period,float,74071000000,USD
+repurchase_of_capital_stock,Amount spent on repurchasing capital stock,float,-17254000000,USD
+repayment_of_debt,Amount spent on debt repayment,float,-29070000000,USD
+issuance_of_debt,Amount received from issuing new debt,float,29645000000,USD
+capital_expenditure,Amount spent on capital expenditures,float,-44477000000,USD
+end_cash_position,Ending cash position,float,18315000000,USD
+beginning_cash_position,Beginning cash position,float,34704000000,USD
+anomaly_score,Anomaly score assigned by the Isolation Forest model,integer,-1,N/A
+revenue_growth,Growth rate of total revenue,float,0.05,N/A
+expense_ratio,Ratio of total expenses to total revenue,float,0.57,N/A
+revenue_rolling_mean,Rolling mean of total revenue,float,60000000000,USD
+expense_rolling_mean,Rolling mean of total expenses,float,35000000000,USD
+net_income_margin,Ratio of net income to total revenue,float,0.34,N/A

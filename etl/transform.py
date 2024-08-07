@@ -1,72 +1,96 @@
 import os
-import json
 import pandas as pd
 
-# Create directory for storing processed data
-os.makedirs('data/processed', exist_ok=True)
+os.makedirs('data/transformed', exist_ok=True)
 
-# Function to load JSON data from file
-def load_json_data(filepath):
+def process_financial_data(filepath, index_col=0):
     """
-    Loads JSON data from a specified file.
+    Clean and wrangle data
+
+    Parameters:
+    filepath (str): Path to the CSV file containing raw financial data.
+    index_col (int): Index column for reading the CSV file.
+
+    Returns:
+    DataFrame: Processed financial data.
+    """
+    df = pd.read_csv(filepath, index_col=index_col)
+    df.fillna(0, inplace=True) 
+    df.rename(columns=lambda x: x.strip().lower().replace(' ', '_').replace('.', '_'), inplace=True) 
+    return df
+
+def standardize_column_names(df, column_mapping):
+    """
+    Standardize column names based on a provided mapping.
+
+    Parameters:
+    df (DataFrame): DataFrame with raw column names.
+    column_mapping (dict): Mapping of old column names to new standardized column names.
+
+    Returns:
+    DataFrame: DataFrame with standardized column names.
+    """
+    df.rename(columns=column_mapping, inplace=True)
+    return df
+
+def feature_engineering(df, statement_type):
+    """
+    Perform feature engineering on the financial data.
+
+    Parameters:
+    df (DataFrame): Financial data.
+    statement_type (str): Type of financial statement (e.g., 'quarterly' or 'annual').
+
+    Returns:
+    DataFrame: Enhanced financial data with additional features.
+    """
+    if 'total_revenue' in df.columns:
+        df['revenue_growth'] = df['total_revenue'].pct_change()
+    if 'total_expenses' in df.columns:
+        df['expense_ratio'] = df['total_expenses'] / df['total_revenue']
     
-    Parameters:
-    filepath (str): The path to the JSON file to be loaded.
-
-    Returns:
-    dict or list: The data from the JSON file, parsed into a Python dictionary or list.
-    """
-    with open(filepath, 'r') as f:
-        return json.load(f)
-
-# Function to clean and wrangle balance sheet data
-def process_balance_sheet(data):
-    """
-    Processes balance sheet data into a pandas DataFrame.
-
-    Parameters:
-    data (dict): A dictionary containing balance sheet data.
-
-    Returns:
-    pd.DataFrame: A pandas DataFrame with the processed balance sheet data.
-    """
-    df = pd.DataFrame([data])
-    df.fillna(0, inplace=True)  # Handle missing values
-    df.rename(columns=lambda x: x.strip().lower().replace(' ', '_'), inplace=True) 
+    if statement_type == 'quarterly':
+        if 'net_income' in df.columns:
+            df['net_income_margin'] = df['net_income'] / df['total_revenue']
+    
     return df
 
-# Function to clean and wrangle income statement data
-def process_income_statement(data):
-    """
-    Processes income statement data into a pandas dataframe.
-    Parameters:
-    data (dict): A dictionary containing income statement data.
-
-    Returns:
-    pd.DataFrame: A pandas DataFrame with the processed income statement data.
-"""
-    df = pd.DataFrame([data])
-    df.fillna(0, inplace=True)  
-    df.rename(columns=lambda x: x.strip().lower().replace(' ', '_'), inplace=True)  
-    return df
-
-# Main function to transform and load data
 def main():
     ticker = 'AAPL'
-    year = '2023'
+    data_types = {
+        'income_statement': 'annual',
+        'quarterly_income_statement': 'quarterly',
+        'balance_sheet': 'annual',
+        'quarterly_balance_sheet': 'quarterly',
+        'cash_flow': 'annual',
+        'quarterly_cash_flow': 'quarterly'
+    }
     
-    # Load raw data
-    balance_sheet_data = load_json_data(f'data/raw/{ticker}_{year}_balance_sheet.json')
-    income_statement_data = load_json_data(f'data/raw/{ticker}_{year}_income_statement.json')
+    # Example column mapping (needs to be adjusted based on actual data)
+    column_mapping = {
+        'total_revenue': 'total_revenue',
+        'total_expenses': 'total_expenses',
+        'net_income': 'net_income',
+        'free_cash_flow': 'free_cash_flow',
+        'repurchase_of_capital_stock': 'repurchase_of_capital_stock',
+        'repayment_of_debt': 'repayment_of_debt',
+        'issuance_of_debt': 'issuance_of_debt',
+        'capital_expenditure': 'capital_expenditure',
+        'end_cash_position': 'end_cash_position',
+        'beginning_cash_position': 'beginning_cash_position'
+    }
     
-    # Process data
-    balance_sheet_df = process_balance_sheet(balance_sheet_data)
-    income_statement_df = process_income_statement(income_statement_data)
+    for data_type, statement_type in data_types.items():
+        # Process data
+        processed_df = process_financial_data(f'data/raw/{ticker}_{data_type}.csv', index_col=0)
+        
+        standardized_df = standardize_column_names(processed_df, column_mapping)
+        
+        enhanced_df = feature_engineering(standardized_df, statement_type)
+        
+        enhanced_df.to_csv(f'data/transformed/{ticker}_{data_type}.csv', index=True)
     
-    # Save processed data
-    balance_sheet_df.to_csv(f'data/processed/{ticker}_{year}_balance_sheet.csv', index=False)
-    income_statement_df.to_csv(f'data/processed/{ticker}_{year}_income_statement.csv', index=False)
-
+    print("Data transformation and feature engineering complete. Data saved to data/transformed/ directory.")
 
 if __name__ == "__main__":
     main()

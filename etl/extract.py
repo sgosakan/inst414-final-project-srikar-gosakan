@@ -1,60 +1,45 @@
 import os
-import requests
-from bs4 import BeautifulSoup
-import json
+import yfinance as yf
 
 # Create directories for storing data
 os.makedirs('data/raw', exist_ok=True)
 
-# Function to extract balance sheet data from EDGAR
-def extract_edgar_data(ticker, year):
+def extract_yahoo_finance_data(ticker):
     """
-    Extracts balance sheet data from a company's 10-K filing on the SEC EDGAR website.
+    Extract financial data from Yahoo Finance using yfinance.
 
     Parameters:
-    ticker (str): The stock ticker symbol of the company.
-    year (int): The year for which the 10-K filing data is required.
+    ticker (str): Stock ticker symbol of the company.
 
     Returns:
-    dict: A dictionary containing the extracted balance sheet data.
+    dict: Dictionary containing financial data DataFrames.
     """
-    base_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={ticker}&type=10-K&dateb=&owner=exclude&count=10"
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    response = requests.get(base_url, headers=headers)
-    soup = BeautifulSoup(response.content, 'html.parser')
+    stock = yf.Ticker(ticker)
     
-    filing_details_url = None
-    for link in soup.find_all('a'):
-        if "Archives" in link.text:
-            filing_details_url = "https://www.sec.gov" + link.get('href')
-            break
+    financial_data = {
+        'income_statement': stock.income_stmt.T,
+        'quarterly_income_statement': stock.quarterly_income_stmt.T, 
+        'balance_sheet': stock.balance_sheet.T,  
+        'quarterly_balance_sheet': stock.quarterly_balance_sheet.T, 
+        'cash_flow': stock.cashflow.T,
+        'quarterly_cash_flow': stock.quarterly_cashflow.T
+    }
     
-    if not filing_details_url:
-        raise Exception(f"Filing details URL not found for {ticker} {year}")
+    return financial_data
 
-    response = requests.get(filing_details_url, headers=headers)
-    soup = BeautifulSoup(response.content, 'html.parser')
-    document_url = None
-    for link in soup.find_all('a'):
-        if link.text.strip().lower().endswith(".htm"):
-            document_url = "https://www.sec.gov" + link.get('href')
-            break
+def main():
+    ticker = 'AAPL'
     
-
-    response = requests.get(document_url, headers=headers)
-    soup = BeautifulSoup(response.content, 'html.parser')
-    tables = soup.find_all('table')
+    try:
+        financial_data = extract_yahoo_finance_data(ticker)
+        
+        for key, df in financial_data.items():
+            df.to_csv(f'data/raw/{ticker}_{key}.csv', index=True)
+        
+        print("Data extraction complete")
     
-    balance_sheet_data = {}
-    for table in tables:
-        if 'Balance Sheets' in table.text:
-            rows = table.find_all('tr')
-            for row in rows:
-                cols = row.find_all('td')
-                if len(cols) >= 2:
-                    key = cols[0].text.strip()
-                    value = cols[1].text.strip().replace(',', '').replace('$', '')
-                    balance_sheet_data[key] = value
-            break
+    except Exception as e:
+        print(e)
 
-    return balance_sheet_data
+if __name__ == "__main__":
+    main()
