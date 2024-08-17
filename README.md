@@ -9,12 +9,12 @@ Automate and enhance financial statement analysis to identify key financial metr
 
 Data Sets Used:
 
-Income Statements, Balance Sheets, Cash Flow Statements: Extracted from Yahoo Finance API.
+Income Statements, Balance Sheets, Cash Flow Statements: Extracted from Yahoo Finance API/yfinance.
 
 Techniques Employed:
 
 Extraction, Transformation, and Loading of financial data.
-Using ARIMA to predict future revenue.
+Using Holt's Linear Trend Model to predict future revenue and debt.
 Using Isolation Forest to detect anomalies in financial data.
 Creating new financial metrics and trends for analysis.
 
@@ -23,6 +23,6 @@ Expected Outputs:
 
 Processed financial statements stored in CSV format.
 Identified anomalies in the financial data.
-Visualization of financial ratios as bar charts.
+Visualization of financial ratios as charts.
 
 This repository is clone-able through Github, and runs on a virtual environment created by the user for the purposes of this final project. Attached is requirements.txt file that includes dependencies and packages required to run the code.

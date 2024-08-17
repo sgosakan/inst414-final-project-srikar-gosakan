@@ -1,62 +1,63 @@
 import os
 import pandas as pd
+import logging
 
-os.makedirs('data/transformed', exist_ok=True)
+# Configure logging
+logging.basicConfig(filename='./pipeline.log', level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
-def process_financial_data(filepath, index_col=0):
+# Create directory for storing transformed data
+os.makedirs('./data/transformed', exist_ok=True)
+
+def process_financial_data(filepath):
     """
-    Clean and wrangle data
+    Process financial data by cleaning and standardizing it.
 
     Parameters:
-    filepath (str): Path to the CSV file containing raw financial data.
-    index_col (int): Index column for reading the CSV file.
+    filepath (str): Path to the raw financial data CSV file.
 
     Returns:
     DataFrame: Processed financial data.
     """
-    df = pd.read_csv(filepath, index_col=index_col)
-    df.fillna(0, inplace=True) 
-    df.rename(columns=lambda x: x.strip().lower().replace(' ', '_').replace('.', '_'), inplace=True) 
-    return df
-
-def standardize_column_names(df, column_mapping):
-    """
-    Standardize column names based on a provided mapping.
-
-    Parameters:
-    df (DataFrame): DataFrame with raw column names.
-    column_mapping (dict): Mapping of old column names to new standardized column names.
-
-    Returns:
-    DataFrame: DataFrame with standardized column names.
-    """
-    df.rename(columns=column_mapping, inplace=True)
+    logging.info(f'Processing data from file: {filepath}')
+    df = pd.read_csv(filepath, index_col=0)
+    
+    # Example cleaning and transformation operations
+    df.fillna(0, inplace=True)
+    df.rename(columns=lambda x: x.strip().lower().replace(' ', '_').replace('.', '_'), inplace=True)
+    
     return df
 
 def feature_engineering(df, statement_type):
     """
-    Perform feature engineering on the financial data.
+    Perform feature engineering on financial data.
 
     Parameters:
     df (DataFrame): Financial data.
-    statement_type (str): Type of financial statement (e.g., 'quarterly' or 'annual').
+    statement_type (str): Type of financial statement (annual or quarterly).
 
     Returns:
-    DataFrame: Enhanced financial data with additional features.
+    DataFrame: Financial data with new features added.
     """
+    logging.info(f'Performing feature engineering for {statement_type} data.')
+    
     if 'total_revenue' in df.columns:
         df['revenue_growth'] = df['total_revenue'].pct_change()
     if 'total_expenses' in df.columns:
         df['expense_ratio'] = df['total_expenses'] / df['total_revenue']
+    if statement_type == 'quarterly' and 'net_income' in df.columns:
+        df['net_income_margin'] = df['net_income'] / df['total_revenue']
     
-    if statement_type == 'quarterly':
-        if 'net_income' in df.columns:
-            df['net_income_margin'] = df['net_income'] / df['total_revenue']
-    
+    df.dropna(inplace=True)
     return df
 
-def main():
-    ticker = 'AAPL'
+def main(ticker):
+    """
+    Main function to transform financial data for a specific ticker.
+
+    Parameters:
+    ticker (str): Stock ticker symbol provided by the user.
+    """
     data_types = {
         'income_statement': 'annual',
         'quarterly_income_statement': 'quarterly',
@@ -66,31 +67,20 @@ def main():
         'quarterly_cash_flow': 'quarterly'
     }
     
-    # Example column mapping (needs to be adjusted based on actual data)
-    column_mapping = {
-        'total_revenue': 'total_revenue',
-        'total_expenses': 'total_expenses',
-        'net_income': 'net_income',
-        'free_cash_flow': 'free_cash_flow',
-        'repurchase_of_capital_stock': 'repurchase_of_capital_stock',
-        'repayment_of_debt': 'repayment_of_debt',
-        'issuance_of_debt': 'issuance_of_debt',
-        'capital_expenditure': 'capital_expenditure',
-        'end_cash_position': 'end_cash_position',
-        'beginning_cash_position': 'beginning_cash_position'
-    }
-    
-    for data_type, statement_type in data_types.items():
-        # Process data
-        processed_df = process_financial_data(f'data/raw/{ticker}_{data_type}.csv', index_col=0)
-        
-        standardized_df = standardize_column_names(processed_df, column_mapping)
-        
-        enhanced_df = feature_engineering(standardized_df, statement_type)
-        
-        enhanced_df.to_csv(f'data/transformed/{ticker}_{data_type}.csv', index=True)
-    
-    print("Data transformation and feature engineering complete. Data saved to data/transformed/ directory.")
+    try:
+        for data_type, statement_type in data_types.items():
+            input_path = f'./data/extracted/{ticker}_{data_type}.csv'
+            output_path = f'./data/transformed/{ticker}_{data_type}.csv'
+            
+            processed_df = process_financial_data(input_path)
+            enhanced_df = feature_engineering(processed_df, statement_type)
+            enhanced_df.to_csv(output_path, index=True)
+            
+            logging.info(f'Saved transformed data to {output_path}')
+        logging.info('Data transformation complete.')
+    except Exception as e:
+        logging.error(f'Error in transforming data for {ticker}: {e}')
 
 if __name__ == "__main__":
-    main()
+    ticker = input("Enter the stock ticker symbol (e.g., AAPL): ")
+    main(ticker)

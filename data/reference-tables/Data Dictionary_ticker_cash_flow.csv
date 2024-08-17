@@ -1,0 +1,54 @@
+﻿attribute Name,Description,Data Type,Example Value,Unit
+free_cash_flow,The amount of cash a company generates after accounting for capital expenditures.,float,"99,584,000,000",USD
+repurchase_of_capital_stock,The total amount spent by the company to buy back its own shares.,float,"-77,550,000,000",USD
+repayment_of_debt,The total amount the company has repaid towards its debt obligations.,float,"-11,151,000,000",USD
+issuance_of_debt,The total amount of new debt issued by the company.,float,"5,228,000,000",USD
+issuance_of_capital_stock,The total amount raised by the company through issuing new shares of stock.,float,0,USD
+capital_expenditure,The total amount spent by the company on acquiring or maintaining physical assets.,float,"-10,959,000,000",USD
+interest_paid_supplemental_data,"The total interest paid by the company, as supplemental data.",float,"3,803,000,000",USD
+income_tax_paid_supplemental_data,"The total income tax paid by the company, as supplemental data.",float,"18,679,000,000",USD
+end_cash_position,The company's cash position at the end of the period.,float,"18,679,000,000",USD
+beginning_cash_position,The company's cash position at the beginning of the period.,float,"30,737,000,000",USD
+changes_in_cash,The net change in the company's cash position during the period.,float,"24,977,000,000",USD
+financing_cash_flow,The net cash flow generated or used in financing activities.,float,"5,760,000,000",USD
+cash_flow_from_continuing_financing_activities,The cash flow from continuing financing activities.,float,"-108,488,000,000",USD
+net_other_financing_charges,Other net charges related to financing activities.,float,"-6,012,000,000",USD
+cash_dividends_paid,The total amount of cash dividends paid by the company.,float,"-15,025,000,000",USD
+common_stock_dividend_paid,The amount of dividends paid specifically on common stock.,float,"-15,025,000,000",USD
+net_common_stock_issuance,The net amount of common stock issued or repurchased.,float,"-77,550,000,000",USD
+common_stock_payments,The total amount paid related to common stock transactions.,float,"-77,550,000,000",USD
+common_stock_issuance,The total amount raised through issuing common stock.,float,0,USD
+net_issuance_payments_of_debt,The net amount of debt issued or repaid.,float,"-9,901,000,000",USD
+net_short_term_debt_issuance,The net amount of short-term debt issued or repaid.,float,"-3,978,000,000",USD
+net_long_term_debt_issuance,The net amount of long-term debt issued or repaid.,float,"-5,923,000,000",USD
+long_term_debt_payments,The total amount paid towards long-term debt obligations.,float,"-11,151,000,000",USD
+long_term_debt_issuance,The total amount raised through issuing long-term debt.,float,"5,228,000,000",USD
+investing_cash_flow,The net cash flow generated or used in investing activities.,float,"5,228,000,000",USD
+cash_flow_from_continuing_investing_activities,The cash flow from continuing investing activities.,float,"3,705,000,000",USD
+net_other_investing_changes,Other net changes related to investing activities.,float,"3,705,000,000",USD
+net_investment_purchase_and_sale,The net amount from investment purchases and sales.,float,"-1,337,000,000",USD
+sale_of_investment,The total amount from selling investments.,float,"16,001,000,000",USD
+purchase_of_investment,The total amount spent on purchasing investments.,float,"45,514,000,000",USD
+net_business_purchase_and_sale,The net amount from business acquisitions and sales.,float,"-29,513,000,000",USD
+purchase_of_business,The total amount spent on purchasing businesses.,float,0,USD
+net_ppe_purchase_and_sale,"The net amount from purchasing and selling property, plant, and equipment (PPE).",float,0,USD
+purchase_of_ppe,"The total amount spent on purchasing property, plant, and equipment (PPE).",float,"-10,959,000,000",USD
+operating_cash_flow,The net cash flow generated from operating activities.,float,"110,543,000,000",USD
+cash_flow_from_continuing_operating_activities,The cash flow from continuing operating activities.,float,"110,543,000,000",USD
+change_in_working_capital,The net change in the company's working capital.,float,"-6,577,000,000",USD
+change_in_other_working_capital,The net change in other components of working capital.,float,0,USD
+change_in_other_current_liabilities,The net change in other current liabilities.,float,"3,031,000,000",USD
+change_in_other_current_assets,The net change in other current assets.,float,"-5,684,000,000",USD
+change_in_payables_and_accrued_expense,The net change in payables and accrued expenses.,float,"-1,889,000,000",USD
+change_in_payable,The net change in payables.,float,"-1,889,000,000",USD
+change_in_account_payable,The net change in accounts payable.,float,"-1,889,000,000",USD
+change_in_inventory,The net change in inventory levels.,float,"-1,618,000,000",USD
+change_in_receivables,The net change in receivables.,float,"-4,170,000,000",USD
+changes_in_account_receivables,The net changes in accounts receivables.,float,"-1,688,000,000",USD
+other_non_cash_items,Other non-cash items affecting the company's cash flow.,float,"-2,227,000,000",USD
+stock_based_compensation,The total amount of stock-based compensation expense.,float,"10,833,000,000",USD
+deferred_tax,The net change in deferred tax liabilities and assets.,float,0,USD
+deferred_income_tax,The net change in deferred income tax.,float,0,USD
+depreciation_amortization_depletion,"The total amount of depreciation, amortization, and depletion expenses.",float,"11,519,000,000",USD
+depreciation_and_amortization,The total depreciation and amortization expenses incurred.,float,"11,519,000,000",USD
+net_income_from_continuing_operations,The net income generated from continuing operations.,float,"96,995,000,000",USD

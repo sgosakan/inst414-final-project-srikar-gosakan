@@ -1,7 +1,12 @@
 import pandas as pd
-from sklearn.ensemble import IsolationForest
-from statsmodels.tsa.arima.model import ARIMA
-from sklearn.metrics import mean_absolute_error, mean_squared_error, precision_score, recall_score, f1_score
+from statsmodels.tsa.holtwinters import Holt
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+import logging
+import os
+
+# Configure logging
+logging.basicConfig(filename='./pipeline.log', level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 def load_data(file_path):
     """
@@ -13,112 +18,188 @@ def load_data(file_path):
     Returns:
     DataFrame: Loaded data.
     """
+    logging.info(f'Loading data from {file_path}')
     return pd.read_csv(file_path, index_col=0)
 
 def feature_engineering(df):
     """
-    Perform feature engineering on the financial data.
+    Feature engineer the financial data.
 
     Parameters:
     df (DataFrame): Financial data.
 
     Returns:
-    DataFrame: Enhanced financial data with additional features.
+    DataFrame: Enhanced financial data.
     """
-    df['revenue_growth'] = df['total_revenue'].pct_change()
-    df['expense_ratio'] = df['total_expenses'] / df['total_revenue']
-    df['revenue_rolling_mean'] = df['total_revenue'].rolling(window=4).mean()
-    df['expense_rolling_mean'] = df['total_expenses'].rolling(window=4).mean()
-    df.dropna(inplace=True)  # Drop rows with NaN values resulting from rolling calculations
+    logging.info('Performing feature engineering on the data.')
+
+    df.index = pd.to_datetime(df.index)
+    df = df.asfreq('QE')
+
+    df.ffill(inplace=True)
+
     return df
 
-def forecast_revenue(df):
+def split_data(df, train_size=0.8):
     """
-    Forecast future revenue using ARIMA model.
+    Split data into training and validation sets.
 
     Parameters:
     df (DataFrame): Financial data.
+    train_size (float): Proportion of data to use for training.
 
     Returns:
-    DataFrame: Forecasted revenue.
+    DataFrame, DataFrame: Training and validation data.
     """
-    model = ARIMA(df['total_revenue'], order=(5, 1, 0))
-    model_fit = model.fit()
-    forecast = model_fit.forecast(steps=4)  # Forecasting next 4 periods
-    return forecast
+    cutoff = int(len(df) * train_size)
+    training_data = df.iloc[:cutoff]
+    validation_data = df.iloc[cutoff:]
+    return training_data, validation_data
 
-def detect_anomalies(df):
+def train_model(training_data, column_name):
     """
-    Detect anomalies in the financial data using Isolation Forest.
+    Train Holt's Linear Trend model using  training data.
 
     Parameters:
-    df (DataFrame): Financial data.
+    training_data (DataFrame): Training data.
+    column_name (str): The column forecasted.
 
     Returns:
-    DataFrame: Data with anomaly scores.
+    model: Fitted Holt model.
     """
-    model = IsolationForest(contamination=0.05)
-    df['anomaly_score'] = model.fit_predict(df[['total_revenue', 'total_expenses']])
-    return df
+    series = training_data[column_name]
+    model = Holt(series).fit()
+    return model
 
-def evaluate_forecast(df, forecast):
+def evaluate_forecast(model, validation_data, column_name):
     """
-    Evaluate the forecasted revenue.
+    Evaluate forecast against validation data.
 
     Parameters:
-    df (DataFrame): Original financial data.
-    forecast (DataFrame): Forecasted revenue.
+    model: Fitted Holt model.
+    validation_data (DataFrame): Validation data.
+    column_name (str): The column forecasted.
 
     Returns:
     dict: Dictionary containing evaluation metrics.
     """
-    actual = df['total_revenue'][-len(forecast):]
+    # Forecast for the validation period
+    forecast = model.forecast(steps=len(validation_data))
+
+    # Actual values
+    actual = validation_data[column_name]
+
     mae = mean_absolute_error(actual, forecast)
     rmse = mean_squared_error(actual, forecast, squared=False)
+
     return {'MAE': mae, 'RMSE': rmse}
 
-def evaluate_anomalies(df):
+def save_metrics(ticker, column_name, metrics):
     """
-    Evaluate the anomaly detection model.
+    Save evaluation metrics to a CSV file.
 
     Parameters:
-    df (DataFrame): Financial data with anomaly scores.
+    ticker (str): Stock ticker symbol.
+    column_name (str): The column being evaluated.
+    metrics (dict): Evaluation metrics.
+    """
+    output_dir = './data/outputs/'
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    
+    output_file = os.path.join(output_dir, f'{ticker}_evaluation_metrics.csv')
+    metrics_df = pd.DataFrame([metrics], index=[column_name])
+    
+    if os.path.exists(output_file):
+        metrics_df.to_csv(output_file, mode='a', header=False)
+    else:
+        metrics_df.to_csv(output_file)
 
+def forecast_variable(df, column_name):
+    """
+    Forecast future values using Holt's Linear Trend model.
+    
+    Parameters:
+    df (DataFrame): Financial data.
+    column_name (str): The column to forecast.
+    
     Returns:
-    dict: Dictionary containing evaluation metrics.
+    DataFrame: Forecasted values.
     """
-    precision = precision_score(df['true_anomalies'], df['anomaly_score'])
-    recall = recall_score(df['true_anomalies'], df['anomaly_score'])
-    f1 = f1_score(df['true_anomalies'], df['anomaly_score'])
-    return {'Precision': precision, 'Recall': recall, 'F1-Score': f1}
+    try:
+        series = df[column_name]
+        
+        logging.info(f"{column_name.capitalize()} Series Type: {type(series)}")
+        logging.info(f"{column_name.capitalize()} Series Content: {series.tolist()}")
+        
+        if isinstance(series, pd.Series) and len(series) > 1:
+            model = Holt(series)
+            model_fit = model.fit()
 
+            forecast = model_fit.forecast(steps=4)
+            
+            forecast_dates = pd.date_range(start=series.index[-1], periods=5, freq='QE')[1:]
+            forecast_df = pd.DataFrame(forecast, index=forecast_dates, columns=[column_name])
+            
+            return forecast_df
+        else:
+            logging.error(f"{column_name.capitalize()} data is not in the expected format or contains insufficient data points.")
+            return None
+    except Exception as e:
+        logging.error(f"Error fitting Holt's model for {column_name}: {e}")
+        return None
+
+        
 def main():
-    """
-    Main function to run predictive models and anomaly detection.
-    """
-    ticker = 'AAPL'
-    data_type = 'quarterly_income_statement'
-    
-    # Load transformed data
-    df = load_data(f'data/processed/{ticker}_{data_type}.csv')
-    
-    # Perform feature engineering
-    df = feature_engineering(df)
-    
-    # Forecast future revenue using ARIMA
-    revenue_forecast = forecast_revenue(df)
-    print("ARIMA Revenue Forecast:")
-    print(revenue_forecast)
-    
-    # Evaluate forecasts
-    forecast_metrics = evaluate_forecast(df, revenue_forecast)
-    print("ARIMA Forecast Evaluation Metrics:")
-    print(forecast_metrics)
-    
-    # Detect anomalies
-    df_with_anomalies = detect_anomalies(df)
-    df_with_anomalies.to_csv(f'data/processed/{ticker}_{data_type}_anomalies.csv', index=True)
-    print("Anomaly detection complete. Data saved to data/processed/ directory.")
+    ticker = input("Enter the stock ticker symbol (e.g., AAPL): ")
+    data_type = 'quarterly_income_statement'  
+    column_name = 'total_revenue' 
+
+    try:
+        df = load_data(f'./data/loaded/{ticker}_{data_type}.csv')
+        df = feature_engineering(df)
+
+        training_data, validation_data = split_data(df, train_size=0.8)
+
+        logging.info(f"Training data:\n{training_data}\n")
+        logging.info(f"Validation data:\n{validation_data}\n")
+
+        model = train_model(training_data, column_name)
+
+        metrics = evaluate_forecast(model, validation_data, column_name)
+        
+        save_metrics(ticker, column_name, metrics)
+        print(f"Evaluation Metrics:\n{metrics}\n")
+        
+        income_data_type = 'quarterly_income_statement'
+        df_income = load_data(f'./data/loaded/{ticker}_{income_data_type}.csv')
+        df_income = feature_engineering(df_income)
+        
+        # Forecast the total revenue using Holt's method
+        revenue_forecast = forecast_variable(df_income, 'total_revenue')
+        if revenue_forecast is not None:
+            revenue_forecast_output_path = f'./data/outputs/{ticker}_{income_data_type}_revenue_forecast.csv'
+            revenue_forecast.to_csv(revenue_forecast_output_path, index=True)
+            logging.info(f'Saved forecasted revenue to {revenue_forecast_output_path}')
+            print(f"Forecasted revenue:\n{revenue_forecast}")
+        
+        # Load and process the data for total debt
+        balance_data_type = 'quarterly_balance_sheet'
+        df_balance = load_data(f'./data/loaded/{ticker}_{balance_data_type}.csv')
+        df_balance = feature_engineering(df_balance)
+        
+        # Forecast the total debt using Holt's method
+        debt_forecast = forecast_variable(df_balance, 'total_debt')
+        if debt_forecast is not None:
+            debt_forecast_output_path = f'./data/outputs/{ticker}_{balance_data_type}_debt_forecast.csv'
+            debt_forecast.to_csv(debt_forecast_output_path, index=True)
+            logging.info(f'Saved forecasted debt to {debt_forecast_output_path}')
+            print(f"Forecasted total_debt:\n{debt_forecast}")
+
+
+        logging.info(f'Forecast evaluation complete for {ticker}.')
+    except Exception as e:
+        logging.error(f'Error in evaluating forecast for {ticker}: {e}')
 
 if __name__ == "__main__":
     main()

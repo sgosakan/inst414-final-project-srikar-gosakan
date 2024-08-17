@@ -1,0 +1,69 @@
+﻿Attribute Name,Description,Data Type,Example Value,Unit
+treasury_shares_number,"The number of treasury shares, which are shares that the company has repurchased and holds.",float,0,Shares
+ordinary_shares_number,The number of ordinary shares issued by the company.,float,"15,550,061,000",Shares
+share_issued,The total number of shares issued by the company.,float,"15,550,061,000",Shares
+net_debt,The company's total debt minus cash and cash equivalents.,float,"81,123,000,000",USD
+total_debt,The total amount of debt the company has incurred.,float,"123,930,000,000",USD
+tangible_book_value,The company's total book value minus intangible assets.,float,"62,146,000,000",USD
+invested_capital,"The total capital invested in the company, including debt and equity.",float,"173,234,000,000",USD
+working_capital,The company's current assets minus current liabilities.,float,"-1,742,000,000",USD
+net_tangible_assets,The company's total tangible assets minus liabilities.,float,"-1,742,000,000",USD
+capital_lease_obligations,The company's obligations under capital leases.,float,"62,146,000,000",USD
+common_stock_equity,The value of the equity owned by common shareholders.,float,"12,842,000,000",USD
+total_capitalization,"The total value of the company's capital, including debt and equity.",float,"62,146,000,000",USD
+total_equity_gross_minority_interest,"The company's total equity, including minority interest.",float,"157,427,000,000",USD
+stockholders_equity,The total value of the equity owned by stockholders.,float,"62,146,000,000",USD
+gains_losses_not_affecting_retained_earnings,Gains or losses that do not impact retained earnings.,float,"-11,452,000,000",USD
+other_equity_adjustments,Other adjustments to the company's equity.,float,"-11,452,000,000",USD
+retained_earnings,The company's accumulated net income retained for reinvestment.,float,"-214,000,000",USD
+capital_stock,The total value of the company's issued stock.,float,"73,812,000,000",USD
+common_stock,The value of the company's common stock.,float,"73,812,000,000",USD
+total_liabilities_net_minority_interest,"The company's total liabilities, excluding minority interest.",float,"290,437,000,000",USD
+total_non_current_liabilities_net_minority_interest,"The company's total non-current liabilities, excluding minority interest.",float,"145,129,000,000",USD
+other_non_current_liabilities,The company's other non-current liabilities.,float,"23,124,000,000",USD
+trade_and_other_payables_non_current,The company's non-current trade and other payables.,float,"15,457,000,000",USD
+long_term_debt_and_capital_lease_obligation,The company's long-term debt and capital lease obligations.,float,"106,548,000,000",USD
+long_term_capital_lease_obligation,The company's long-term capital lease obligations.,float,"11,267,000,000",USD
+long_term_debt,The company's long-term debt obligations.,float,"95,281,000,000",USD
+current_liabilities,The company's total current liabilities.,float,"145,308,000,000",USD
+other_current_liabilities,The company's other current liabilities.,float,"48,435,000,000",USD
+current_deferred_liabilities,The company's current deferred liabilities.,float,"8,061,000,000",USD
+current_deferred_revenue,The company's current deferred revenue.,float,"8,061,000,000",USD
+current_debt_and_capital_lease_obligation,The company's current debt and capital lease obligations.,float,"17,382,000,000",USD
+current_capital_lease_obligation,The company's current capital lease obligations.,float,"1,575,000,000",USD
+current_debt,The company's current debt obligations.,float,"15,807,000,000",USD
+other_current_borrowings,The company's other current borrowings.,float,"9,822,000,000",USD
+commercial_paper,The company's commercial paper liabilities.,float,"5,985,000,000",USD
+payables_and_accrued_expenses,The company's total payables and accrued expenses.,float,"71,430,000,000",USD
+payables,The company's total payables.,float,"71,430,000,000",USD
+total_tax_payable,The company's total tax payable.,float,"8,819,000,000",USD
+income_tax_payable,The company's income tax payable.,float,"8,819,000,000",USD
+accounts_payable,The company's accounts payable.,float,"62,611,000,000",USD
+total_assets,The company's total assets.,float,"352,583,000,000",USD
+total_non_current_assets,The company's total non-current assets.,float,"209,017,000,000",USD
+other_non_current_assets,The company's other non-current assets.,float,"36,245,000,000",USD
+non_current_deferred_assets,The company's non-current deferred assets.,float,"17,852,000,000",USD
+non_current_deferred_taxes_assets,The company's non-current deferred tax assets.,float,"17,852,000,000",USD
+investments_and_advances,The company's total investments and advances.,float,"100,544,000,000",USD
+other_investments,The company's other investments.,float,0,USD
+investment_in_financial_assets,The company's total investments in financial assets.,float,"100,544,000,000",USD
+available_for_sale_securities,The company's available-for-sale securities.,float,"100,544,000,000",USD
+net_ppe,"The company's net property, plant, and equipment (PPE).",float,"54,376,000,000",USD
+accumulated_depreciation,The total depreciation accumulated on the company's assets.,float,"-70,884,000,000",USD
+gross_ppe,"The company's total gross property, plant, and equipment (PPE).",float,"125,260,000,000",USD
+leases,The company's total lease obligations.,float,"12,839,000,000",USD
+other_properties,The company's other property-related assets.,float,"10,661,000,000",USD
+machinery_furniture_equipment,"The company's machinery, furniture, and equipment assets.",float,"78,314,000,000",USD
+land_and_improvements,The company's land and improvements assets.,float,"23,446,000,000",USD
+properties,The company's total property assets.,float,0,USD
+current_assets,The company's total current assets.,float,"143,566,000,000",USD
+other_current_assets,The company's other current assets.,float,"14,695,000,000",USD
+inventory,The company's total inventory.,float,"6,331,000,000",USD
+receivables,The company's total receivables.,float,"60,985,000,000",USD
+other_receivables,The company's other receivables.,float,"31,477,000,000",USD
+accounts_receivable,The company's accounts receivable.,float,"29,508,000,000",USD
+cash_cash_equivalents_and_short_term_investments,"The company's total cash, cash equivalents, and short-term investments.",float,"61,555,000,000",USD
+other_short_term_investments,The company's other short-term investments.,float,"31,590,000,000",USD
+cash_and_cash_equivalents,The company's total cash and cash equivalents.,float,"29,965,000,000",USD
+cash_equivalents,The company's total cash equivalents.,float,"1,606,000,000",USD
+cash_financial,The company's cash balance related to financial activities.,float,"28,359,000,000",USD

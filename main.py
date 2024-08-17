@@ -1,51 +1,42 @@
 import subprocess
 import logging
+import os
 
 # Configure logging
 logging.basicConfig(filename='pipeline.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-def run_script(script_name):
+def run_script(script_path, ticker):
     """
-    Run a Python script.
+    Run a Python script with the provided ticker symbol.
 
     Parameters:
-    script_name (str): The name of the Python script to run.
+    script_path (str): The relative path to the Python script to run.
+    ticker (str): Stock ticker symbol to pass to the script.
     """
-    logging.info(f'Starting script: {script_name}')
-    subprocess.run(['python', script_name], check=True)
-    logging.info(f'Completed script: {script_name}')
+    try:
+        subprocess.run(['python', script_path, ticker], check=True)
+        logging.info(f'Successfully ran {os.path.basename(script_path)} for ticker {ticker}')
+    except subprocess.CalledProcessError as e:
+        logging.error(f'Error running {os.path.basename(script_path)} for ticker {ticker}: {e}')
 
 def main():
     """
     Main function to run the entire ETL, analysis, and visualization pipeline.
     """
-    logging.info('Starting ETL process...')
-    try:
-        run_script('extract.py')
-        run_script('transform.py')
-        run_script('load.py')
-        logging.info('ETL process complete.')
-    except subprocess.CalledProcessError as e:
-        logging.error(f'ETL process failed: {e}')
-        return
+    ticker = input("Enter the stock ticker symbol (e.g., AAPL): ")
     
-    logging.info('Starting analysis process...')
-    try:
-        run_script('model.py')
-        logging.info('Analysis process complete.')
-    except subprocess.CalledProcessError as e:
-        logging.error(f'Analysis process failed: {e}')
-        return
-
-    logging.info('Starting visualization process...')
-    try:
-        run_script('visualize.py')
-        logging.info('Visualization process complete.')
-    except subprocess.CalledProcessError as e:
-        logging.error(f'Visualization process failed: {e}')
-        return
+    scripts = [
+        'etl/extract.py',
+        'etl/transform.py',
+        'etl/load.py',
+        'analysis/model.py',
+        'analysis/evaluate.py',
+        'vis/visualizations.py'
+    ]
+    
+    for script in scripts:
+        run_script(script, ticker)
 
 if __name__ == "__main__":
     main()
-

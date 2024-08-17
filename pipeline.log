@@ -1,0 +1,1937 @@
+2024-08-15 21:40:41,983 - ERROR - Error running extract.py for ticker AAPL: Command '['python', 'extract.py', 'AAPL']' returned non-zero exit status 2.
+2024-08-15 21:40:42,007 - ERROR - Error running transform.py for ticker AAPL: Command '['python', 'transform.py', 'AAPL']' returned non-zero exit status 2.
+2024-08-15 21:40:42,032 - ERROR - Error running load.py for ticker AAPL: Command '['python', 'load.py', 'AAPL']' returned non-zero exit status 2.
+2024-08-15 21:40:42,058 - ERROR - Error running model.py for ticker AAPL: Command '['python', 'model.py', 'AAPL']' returned non-zero exit status 2.
+2024-08-15 21:40:42,084 - ERROR - Error running evaluate.py for ticker AAPL: Command '['python', 'evaluate.py', 'AAPL']' returned non-zero exit status 2.
+2024-08-15 21:40:42,112 - ERROR - Error running visualizations.py for ticker AAPL: Command '['python', 'visualizations.py', 'AAPL']' returned non-zero exit status 2.
+2024-08-15 21:45:37,607 - INFO - Successfully ran extract.py for ticker AAPL
+2024-08-15 21:45:50,924 - INFO - Successfully ran transform.py for ticker AAPL
+2024-08-15 21:45:54,029 - INFO - Successfully ran load.py for ticker AAPL
+2024-08-15 21:47:23,524 - INFO - Successfully ran model.py for ticker AAPL
+2024-08-15 21:47:28,280 - INFO - Successfully ran evaluate.py for ticker AAPL
+2024-08-15 21:47:54,907 - INFO - Successfully ran visualizations.py for ticker AAPL
+2024-08-15 22:07:48,499 - INFO - Successfully ran extract.py for ticker AAPL
+2024-08-15 22:07:54,285 - INFO - Successfully ran transform.py for ticker AAPL
+2024-08-15 22:07:56,174 - INFO - Successfully ran load.py for ticker AAPL
+2024-08-15 22:08:00,579 - INFO - Successfully ran model.py for ticker AAPL
+2024-08-15 22:08:03,944 - INFO - Successfully ran evaluate.py for ticker AAPL
+2024-08-15 22:08:21,381 - INFO - Successfully ran visualizations.py for ticker AAPL
+2024-08-15 22:15:22,983 - INFO - Starting extraction for AAPL
+2024-08-15 22:15:24,186 - INFO - Successfully extracted data for AAPL
+2024-08-15 22:15:24,191 - INFO - Saved extracted data to ./data/extracted/AAPL_income_statement.csv
+2024-08-15 22:15:24,193 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_income_statement.csv
+2024-08-15 22:15:24,194 - INFO - Saved extracted data to ./data/extracted/AAPL_balance_sheet.csv
+2024-08-15 22:15:24,196 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_balance_sheet.csv
+2024-08-15 22:15:24,197 - INFO - Saved extracted data to ./data/extracted/AAPL_cash_flow.csv
+2024-08-15 22:15:24,198 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_cash_flow.csv
+2024-08-15 22:15:24,198 - INFO - Data extraction complete.
+2024-08-15 22:26:54,059 - INFO - Starting extraction for AAPL
+2024-08-15 22:26:55,166 - INFO - Successfully extracted data for AAPL
+2024-08-15 22:26:55,168 - INFO - Saved extracted data to ./data/extracted/AAPL_income_statement.csv
+2024-08-15 22:26:55,169 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_income_statement.csv
+2024-08-15 22:26:55,170 - INFO - Saved extracted data to ./data/extracted/AAPL_balance_sheet.csv
+2024-08-15 22:26:55,171 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_balance_sheet.csv
+2024-08-15 22:26:55,172 - INFO - Saved extracted data to ./data/extracted/AAPL_cash_flow.csv
+2024-08-15 22:26:55,173 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_cash_flow.csv
+2024-08-15 22:26:55,173 - INFO - Data extraction complete.
+2024-08-15 22:26:55,260 - INFO - Successfully ran extract.py for ticker AAPL
+2024-08-15 22:27:04,641 - INFO - Processing data from file: ./data/extracted/AAPL_income_statement.csv
+2024-08-15 22:27:04,650 - INFO - Performing feature engineering for annual data.
+2024-08-15 22:27:04,659 - INFO - Saved transformed data to ./data/transformed/AAPL_income_statement.csv
+2024-08-15 22:27:04,659 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_income_statement.csv
+2024-08-15 22:27:04,663 - INFO - Performing feature engineering for quarterly data.
+2024-08-15 22:27:04,666 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_income_statement.csv
+2024-08-15 22:27:04,666 - INFO - Processing data from file: ./data/extracted/AAPL_balance_sheet.csv
+2024-08-15 22:27:04,669 - INFO - Performing feature engineering for annual data.
+2024-08-15 22:27:04,671 - INFO - Saved transformed data to ./data/transformed/AAPL_balance_sheet.csv
+2024-08-15 22:27:04,671 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_balance_sheet.csv
+2024-08-15 22:27:04,675 - INFO - Performing feature engineering for quarterly data.
+2024-08-15 22:27:04,677 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_balance_sheet.csv
+2024-08-15 22:27:04,678 - INFO - Processing data from file: ./data/extracted/AAPL_cash_flow.csv
+2024-08-15 22:27:04,680 - INFO - Performing feature engineering for annual data.
+2024-08-15 22:27:04,682 - INFO - Saved transformed data to ./data/transformed/AAPL_cash_flow.csv
+2024-08-15 22:27:04,682 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_cash_flow.csv
+2024-08-15 22:27:04,684 - INFO - Performing feature engineering for quarterly data.
+2024-08-15 22:27:04,686 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_cash_flow.csv
+2024-08-15 22:27:04,686 - INFO - Data transformation complete.
+2024-08-15 22:27:04,740 - INFO - Successfully ran transform.py for ticker AAPL
+2024-08-15 22:27:13,631 - ERROR - Error in loading data for AAPL: move_transformed_data() takes 0 positional arguments but 1 was given
+2024-08-15 22:27:13,639 - INFO - Successfully ran load.py for ticker AAPL
+2024-08-15 22:27:53,436 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 22:27:53,438 - ERROR - Error in analysis for AAPL: [Errno 2] No such file or directory: './data/loaded/AAPL_quarterly_income_statement.csv'
+2024-08-15 22:27:53,608 - INFO - Successfully ran model.py for ticker AAPL
+2024-08-15 22:31:39,750 - INFO - Starting extraction for AAPL
+2024-08-15 22:31:40,774 - INFO - Successfully extracted data for AAPL
+2024-08-15 22:31:40,777 - INFO - Saved extracted data to ./data/extracted/AAPL_income_statement.csv
+2024-08-15 22:31:40,778 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_income_statement.csv
+2024-08-15 22:31:40,779 - INFO - Saved extracted data to ./data/extracted/AAPL_balance_sheet.csv
+2024-08-15 22:31:40,781 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_balance_sheet.csv
+2024-08-15 22:31:40,782 - INFO - Saved extracted data to ./data/extracted/AAPL_cash_flow.csv
+2024-08-15 22:31:40,783 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_cash_flow.csv
+2024-08-15 22:31:40,783 - INFO - Data extraction complete.
+2024-08-15 22:31:40,877 - INFO - Successfully ran extract.py for ticker AAPL
+2024-08-15 22:31:51,013 - INFO - Processing data from file: ./data/extracted/AAPL_income_statement.csv
+2024-08-15 22:31:51,017 - INFO - Performing feature engineering for annual data.
+2024-08-15 22:31:51,020 - INFO - Saved transformed data to ./data/transformed/AAPL_income_statement.csv
+2024-08-15 22:31:51,020 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_income_statement.csv
+2024-08-15 22:31:51,022 - INFO - Performing feature engineering for quarterly data.
+2024-08-15 22:31:51,024 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_income_statement.csv
+2024-08-15 22:31:51,024 - INFO - Processing data from file: ./data/extracted/AAPL_balance_sheet.csv
+2024-08-15 22:31:51,027 - INFO - Performing feature engineering for annual data.
+2024-08-15 22:31:51,028 - INFO - Saved transformed data to ./data/transformed/AAPL_balance_sheet.csv
+2024-08-15 22:31:51,028 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_balance_sheet.csv
+2024-08-15 22:31:51,031 - INFO - Performing feature engineering for quarterly data.
+2024-08-15 22:31:51,033 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_balance_sheet.csv
+2024-08-15 22:31:51,033 - INFO - Processing data from file: ./data/extracted/AAPL_cash_flow.csv
+2024-08-15 22:31:51,036 - INFO - Performing feature engineering for annual data.
+2024-08-15 22:31:51,037 - INFO - Saved transformed data to ./data/transformed/AAPL_cash_flow.csv
+2024-08-15 22:31:51,037 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_cash_flow.csv
+2024-08-15 22:31:51,039 - INFO - Performing feature engineering for quarterly data.
+2024-08-15 22:31:51,041 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_cash_flow.csv
+2024-08-15 22:31:51,041 - INFO - Data transformation complete.
+2024-08-15 22:31:51,094 - INFO - Successfully ran transform.py for ticker AAPL
+2024-08-15 22:31:57,407 - INFO - Moving transformed data to loaded directory for ticker: AAPL
+2024-08-15 22:31:57,407 - INFO - Moved AAPL_quarterly_balance_sheet.csv to ./data/loaded
+2024-08-15 22:31:57,408 - INFO - Moved AAPL_quarterly_cash_flow.csv to ./data/loaded
+2024-08-15 22:31:57,408 - INFO - Moved AAPL_cash_flow.csv to ./data/loaded
+2024-08-15 22:31:57,408 - INFO - Moved AAPL_quarterly_income_statement.csv to ./data/loaded
+2024-08-15 22:31:57,408 - INFO - Moved AAPL_income_statement.csv to ./data/loaded
+2024-08-15 22:31:57,408 - INFO - Moved AAPL_balance_sheet.csv to ./data/loaded
+2024-08-15 22:31:57,408 - INFO - Data loading complete.
+2024-08-15 22:31:57,416 - INFO - Successfully ran load.py for ticker AAPL
+2024-08-15 22:32:03,323 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 22:32:03,327 - INFO - Performing feature engineering.
+2024-08-15 22:32:03,336 - INFO - Forecasting revenue using ARIMA.
+2024-08-15 22:32:03,520 - ERROR - Error in analysis for AAPL: Schur decomposition solver error.
+2024-08-15 22:32:03,665 - INFO - Successfully ran model.py for ticker AAPL
+2024-08-15 22:53:16,153 - INFO - Processing data from file: ./data/extracted/AAPL_income_statement.csv
+2024-08-15 22:53:16,175 - INFO - Performing feature engineering for annual data.
+2024-08-15 22:53:16,190 - INFO - Saved transformed data to ./data/transformed/AAPL_income_statement.csv
+2024-08-15 22:53:16,190 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_income_statement.csv
+2024-08-15 22:53:16,193 - INFO - Performing feature engineering for quarterly data.
+2024-08-15 22:53:16,196 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_income_statement.csv
+2024-08-15 22:53:16,196 - INFO - Processing data from file: ./data/extracted/AAPL_balance_sheet.csv
+2024-08-15 22:53:16,200 - INFO - Performing feature engineering for annual data.
+2024-08-15 22:53:16,202 - INFO - Saved transformed data to ./data/transformed/AAPL_balance_sheet.csv
+2024-08-15 22:53:16,202 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_balance_sheet.csv
+2024-08-15 22:53:16,205 - INFO - Performing feature engineering for quarterly data.
+2024-08-15 22:53:16,206 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_balance_sheet.csv
+2024-08-15 22:53:16,206 - INFO - Processing data from file: ./data/extracted/AAPL_cash_flow.csv
+2024-08-15 22:53:16,209 - INFO - Performing feature engineering for annual data.
+2024-08-15 22:53:16,210 - INFO - Saved transformed data to ./data/transformed/AAPL_cash_flow.csv
+2024-08-15 22:53:16,210 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_cash_flow.csv
+2024-08-15 22:53:16,213 - INFO - Performing feature engineering for quarterly data.
+2024-08-15 22:53:16,215 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_cash_flow.csv
+2024-08-15 22:53:16,215 - INFO - Data transformation complete.
+2024-08-15 23:15:42,238 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 23:15:42,253 - INFO - Performing feature engineering.
+2024-08-15 23:15:42,435 - ERROR - Revenue forecast failed for AAPL, skipping evaluation and saving.
+2024-08-15 23:15:42,435 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-15 23:15:42,588 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-15 23:15:42,588 - INFO - Analysis complete.
+2024-08-15 23:18:02,629 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 23:18:02,646 - INFO - Performing feature engineering.
+2024-08-15 23:18:02,658 - ERROR - Error in analysis for AAPL: 'Index' object has no attribute 'inferred_freq'
+2024-08-15 23:19:44,720 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 23:19:44,734 - INFO - Performing feature engineering.
+2024-08-15 23:19:44,746 - ERROR - Error in analysis for AAPL: Need at least 3 dates to infer frequency
+2024-08-15 23:22:19,789 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 23:22:19,803 - INFO - Performing feature engineering.
+2024-08-15 23:22:19,813 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-15 23:22:19,872 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_forecast.csv
+2024-08-15 23:22:19,874 - ERROR - Error in analysis for AAPL: Found input variables with inconsistent numbers of samples: [1, 4]
+2024-08-15 23:29:29,888 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 23:29:29,900 - INFO - Performing feature engineering.
+2024-08-15 23:29:29,907 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-15 23:29:29,910 - WARNING - Not enough data points for ARIMA forecasting.
+2024-08-15 23:29:29,910 - ERROR - Revenue forecast failed for AAPL, skipping evaluation and saving.
+2024-08-15 23:29:29,911 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-15 23:29:30,050 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-15 23:29:30,050 - INFO - Analysis complete.
+2024-08-15 23:45:29,268 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 23:45:29,294 - INFO - Performing feature engineering.
+2024-08-15 23:45:29,312 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-15 23:45:29,324 - ERROR - Error fitting ETS model: Cannot compute initial seasonals using heuristic method with less than two full seasonal cycles in the data.
+2024-08-15 23:45:29,324 - ERROR - Revenue forecast failed for AAPL, skipping evaluation and saving.
+2024-08-15 23:45:29,324 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-15 23:45:29,468 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-15 23:45:29,468 - INFO - Analysis complete.
+2024-08-15 23:47:02,388 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 23:47:02,392 - INFO - Performing feature engineering.
+2024-08-15 23:47:02,396 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-15 23:47:02,419 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_forecast.csv
+2024-08-15 23:47:02,419 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-15 23:47:02,419 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-15 23:47:02,553 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-15 23:47:02,553 - INFO - Analysis complete.
+2024-08-15 23:47:36,121 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 23:47:36,126 - INFO - Performing feature engineering.
+2024-08-15 23:47:36,130 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-15 23:47:36,133 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_forecast.csv
+2024-08-15 23:47:36,133 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-15 23:47:36,133 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-15 23:47:36,273 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-15 23:47:36,273 - INFO - Analysis complete.
+2024-08-15 23:53:09,943 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 23:53:09,963 - INFO - Performing feature engineering.
+2024-08-15 23:53:09,977 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-15 23:53:09,992 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_forecast.csv
+2024-08-15 23:53:09,992 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-15 23:53:09,992 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-15 23:53:10,126 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-15 23:53:10,126 - INFO - Analysis complete.
+2024-08-15 23:55:12,325 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-15 23:55:12,332 - INFO - Performing feature engineering.
+2024-08-15 23:55:12,336 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-15 23:55:12,339 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_forecast.csv
+2024-08-15 23:55:12,339 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-15 23:55:12,339 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-15 23:55:12,475 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-15 23:55:12,475 - INFO - Analysis complete.
+2024-08-16 00:08:25,020 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 00:08:25,036 - INFO - Performing feature engineering.
+2024-08-16 00:08:25,047 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 00:08:25,055 - ERROR - Error fitting SES model: Only 1 dimensional data supported
+2024-08-16 00:08:25,055 - ERROR - Revenue forecast failed for AAPL, skipping evaluation and saving.
+2024-08-16 00:08:25,055 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 00:08:25,199 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-16 00:08:25,199 - INFO - Analysis complete.
+2024-08-16 00:09:49,798 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 00:09:49,817 - INFO - Performing feature engineering.
+2024-08-16 00:09:49,831 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 00:09:49,838 - ERROR - Error fitting SES model: unrecognized data structures: <class 'numpy.float64'> / <class 'NoneType'>
+2024-08-16 00:09:49,838 - ERROR - Revenue forecast failed for AAPL, skipping evaluation and saving.
+2024-08-16 00:09:49,838 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 00:09:49,985 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-16 00:09:49,985 - INFO - Analysis complete.
+2024-08-16 00:12:38,087 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 00:12:38,092 - INFO - Performing feature engineering.
+2024-08-16 00:12:38,096 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 00:12:38,097 - ERROR - Error fitting SES model: unrecognized data structures: <class 'numpy.float64'> / <class 'NoneType'>
+2024-08-16 00:12:38,097 - ERROR - Revenue forecast failed for AAPL, skipping evaluation and saving.
+2024-08-16 00:12:38,097 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 00:12:38,229 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-16 00:12:38,229 - INFO - Analysis complete.
+2024-08-16 00:15:14,584 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 00:15:14,595 - INFO - Performing feature engineering.
+2024-08-16 00:15:14,605 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 00:15:14,610 - ERROR - Error fitting SES model: cannot access local variable 'model_fit' where it is not associated with a value
+2024-08-16 00:15:14,610 - ERROR - Revenue forecast failed for AAPL, skipping evaluation and saving.
+2024-08-16 00:15:14,610 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 00:15:14,755 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-16 00:15:14,755 - INFO - Analysis complete.
+2024-08-16 00:16:41,428 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 00:16:41,434 - INFO - Performing feature engineering.
+2024-08-16 00:16:41,439 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 00:16:41,439 - ERROR - Revenue data is not in the expected format or contains insufficient data points.
+2024-08-16 00:16:41,439 - ERROR - Revenue forecast failed for AAPL, skipping evaluation and saving.
+2024-08-16 00:16:41,440 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 00:16:41,587 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-16 00:16:41,587 - INFO - Analysis complete.
+2024-08-16 00:18:37,068 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 00:18:37,073 - INFO - Performing feature engineering.
+2024-08-16 00:18:37,077 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 00:18:37,078 - INFO - Revenue Series Content: 81797000000.0
+2024-08-16 00:18:37,078 - ERROR - Revenue data is not in the expected format or contains insufficient data points.
+2024-08-16 00:18:37,078 - ERROR - Revenue forecast failed for AAPL, skipping evaluation and saving.
+2024-08-16 00:18:37,078 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 00:18:37,217 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-16 00:18:37,217 - INFO - Analysis complete.
+2024-08-16 00:22:14,813 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 00:22:14,830 - INFO - Performing feature engineering.
+2024-08-16 00:22:14,845 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 00:22:14,904 - INFO - DataFrame Content: 
+            tax_effect_of_unusual_items  ...  expense_rolling_mean
+2023-06-30                          0.0  ...          6.584575e+10
+
+[1 rows x 44 columns]
+2024-08-16 00:22:14,904 - INFO - Revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 00:22:14,904 - INFO - Revenue Series Content: [81797000000.0]
+2024-08-16 00:22:14,904 - ERROR - Revenue data is not in the expected format or contains insufficient data points.
+2024-08-16 00:22:14,904 - ERROR - Revenue forecast failed for AAPL, skipping evaluation and saving.
+2024-08-16 00:22:14,904 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 00:22:15,040 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-16 00:22:15,040 - INFO - Analysis complete.
+2024-08-16 01:15:47,808 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 01:15:47,826 - INFO - Performing feature engineering.
+2024-08-16 01:15:47,837 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 01:15:47,844 - INFO - Debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 01:15:47,857 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_forecast.csv
+2024-08-16 01:15:47,858 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-16 01:15:47,858 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 01:15:48,003 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_balance_sheet_anomalies.csv
+2024-08-16 01:15:48,003 - INFO - Analysis complete.
+2024-08-16 01:19:13,492 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 01:19:13,504 - INFO - Performing feature engineering.
+2024-08-16 01:19:13,516 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 01:19:13,520 - ERROR - Error in analysis for AAPL: name 'forecast_debt' is not defined
+2024-08-16 01:22:02,038 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 01:22:02,059 - INFO - Performing feature engineering.
+2024-08-16 01:22:02,072 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 01:22:02,151 - INFO - DataFrame Content: 
+            treasury_shares_number  ...  equity_rolling_mean
+2023-09-30                     0.0  ...         6.928700e+10
+2023-12-31                     0.0  ...         6.767850e+10
+
+[2 rows x 76 columns]
+2024-08-16 01:22:02,151 - INFO - Total Debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 01:22:02,151 - INFO - Total Debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 01:22:02,175 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_forecast.csv
+2024-08-16 01:22:02,175 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-16 01:22:02,175 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 01:22:02,327 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_balance_sheet_anomalies.csv
+2024-08-16 01:22:02,328 - INFO - Analysis complete.
+2024-08-16 01:56:47,441 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 01:56:47,458 - INFO - Performing feature engineering.
+2024-08-16 01:56:47,470 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 01:56:47,554 - INFO - DataFrame Content: 
+            treasury_shares_number  ...  equity_rolling_mean
+2023-09-30                     0.0  ...         6.928700e+10
+2023-12-31                     0.0  ...         6.767850e+10
+
+[2 rows x 76 columns]
+2024-08-16 01:56:47,555 - INFO - Debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 01:56:47,555 - INFO - Debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 01:56:47,559 - ERROR - Error fitting Holt's model: too many indices for array: array is 0-dimensional, but 1 were indexed
+2024-08-16 01:56:47,559 - ERROR - Debt forecast failed for AAPL, skipping evaluation and saving.
+2024-08-16 01:56:47,559 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 01:56:47,723 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_balance_sheet_anomalies.csv
+2024-08-16 01:56:47,723 - INFO - Analysis complete.
+2024-08-16 01:59:40,709 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 01:59:40,728 - INFO - Performing feature engineering.
+2024-08-16 01:59:40,743 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 01:59:40,823 - INFO - DataFrame Content: 
+            treasury_shares_number  ...  equity_rolling_mean
+2023-09-30                     0.0  ...         6.928700e+10
+2023-12-31                     0.0  ...         6.767850e+10
+
+[2 rows x 76 columns]
+2024-08-16 01:59:40,823 - INFO - Debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 01:59:40,824 - INFO - Debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 01:59:40,827 - ERROR - Error fitting ARIMA model: too many indices for array: array is 0-dimensional, but 1 were indexed
+2024-08-16 01:59:40,828 - ERROR - Debt forecast failed for AAPL, skipping evaluation and saving.
+2024-08-16 01:59:40,828 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 01:59:40,970 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_balance_sheet_anomalies.csv
+2024-08-16 01:59:40,970 - INFO - Analysis complete.
+2024-08-16 02:02:42,593 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 02:02:42,600 - INFO - Performing feature engineering.
+2024-08-16 02:02:42,604 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 02:02:42,605 - INFO - Debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 02:02:42,605 - INFO - Debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 02:02:42,609 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_forecast.csv
+2024-08-16 02:02:42,609 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-16 02:02:42,609 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 02:02:42,737 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_balance_sheet_anomalies.csv
+2024-08-16 02:02:42,737 - INFO - Analysis complete.
+2024-08-16 02:11:53,642 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 02:11:53,661 - INFO - Performing feature engineering.
+2024-08-16 02:11:53,673 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 02:11:53,680 - INFO - Debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 02:11:53,680 - INFO - Debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 02:11:53,702 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_forecast.csv
+2024-08-16 02:11:53,702 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-16 02:11:53,702 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 02:11:53,856 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_balance_sheet_anomalies.csv
+2024-08-16 02:11:53,856 - INFO - Analysis complete.
+2024-08-16 02:48:44,899 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 02:48:44,918 - INFO - Performing feature engineering on balance sheet data.
+2024-08-16 02:48:44,930 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 02:48:44,938 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 02:48:44,941 - INFO - Performing feature engineering on income statement data.
+2024-08-16 02:48:44,944 - INFO - Total_debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 02:48:44,944 - INFO - Total_debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 02:48:44,969 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 02:48:44,969 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-16 02:48:44,969 - INFO - Total_revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 02:48:44,969 - INFO - Total_revenue Series Content: [81797000000.0]
+2024-08-16 02:48:44,970 - ERROR - Total_revenue data is not in the expected format or contains insufficient data points.
+2024-08-16 02:48:44,970 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 02:48:45,125 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_balance_sheet_anomalies.csv
+2024-08-16 02:48:45,125 - INFO - Analysis complete.
+2024-08-16 03:08:04,870 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 03:08:04,876 - INFO - Performing feature engineering on balance sheet data.
+2024-08-16 03:08:04,881 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 03:08:04,881 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 03:08:04,884 - INFO - Performing feature engineering on income statement data.
+2024-08-16 03:08:04,931 - INFO - Processed Income DataFrame:
+            tax_effect_of_unusual_items  ...  expense_rolling_mean
+2023-06-30                          0.0  ...          6.584575e+10
+
+[1 rows x 44 columns]
+2024-08-16 03:08:04,931 - INFO - Total_debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 03:08:04,931 - INFO - Total_debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 03:08:04,944 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 03:08:04,944 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-16 03:08:04,944 - INFO - Total_revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 03:08:04,944 - INFO - Total_revenue Series Content: [81797000000.0]
+2024-08-16 03:08:04,944 - ERROR - Total_revenue data is not in the expected format or contains insufficient data points.
+2024-08-16 03:08:04,944 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 03:08:05,071 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_balance_sheet_anomalies.csv
+2024-08-16 03:08:05,071 - INFO - Analysis complete.
+2024-08-16 03:09:56,890 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 03:09:56,895 - INFO - Performing feature engineering on balance sheet data.
+2024-08-16 03:09:56,899 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 03:09:56,900 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 03:09:56,902 - INFO - Performing feature engineering on income statement data.
+2024-08-16 03:09:56,948 - INFO - Processed Income DataFrame:
+            tax_effect_of_unusual_items  ...  expense_rolling_mean
+2024-03-31                          0.0  ...                   NaN
+2023-12-31                          0.0  ...                   NaN
+2023-09-30                          0.0  ...                   NaN
+2023-06-30                          0.0  ...          6.584575e+10
+
+[4 rows x 44 columns]
+2024-08-16 03:09:56,948 - INFO - Total_debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 03:09:56,948 - INFO - Total_debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 03:09:56,961 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 03:09:56,961 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-16 03:09:56,961 - INFO - Total_revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 03:09:56,961 - INFO - Total_revenue Series Content: [90753000000.0, 119575000000.0, 89498000000.0, 81797000000.0]
+2024-08-16 03:09:56,982 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 03:09:56,985 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 03:09:57,107 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_balance_sheet_anomalies.csv
+2024-08-16 03:09:57,107 - INFO - Analysis complete.
+2024-08-16 03:37:55,702 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 03:37:55,708 - INFO - Performing feature engineering on balance sheet data.
+2024-08-16 03:37:55,712 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 03:37:55,713 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 03:37:55,715 - INFO - Performing feature engineering on income statement data.
+2024-08-16 03:37:55,762 - INFO - Processed Income DataFrame:
+            tax_effect_of_unusual_items  ...  expense_rolling_mean
+2024-03-31                          0.0  ...                   NaN
+2023-12-31                          0.0  ...                   NaN
+2023-09-30                          0.0  ...                   NaN
+2023-06-30                          0.0  ...          6.584575e+10
+
+[4 rows x 44 columns]
+2024-08-16 03:37:55,762 - INFO - Total_debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 03:37:55,762 - INFO - Total_debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 03:37:55,776 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 03:37:55,777 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-16 03:37:55,777 - INFO - Total_revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 03:37:55,777 - INFO - Total_revenue Series Content: [90753000000.0, 119575000000.0, 89498000000.0, 81797000000.0]
+2024-08-16 03:37:55,792 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 03:37:55,794 - INFO - Detecting anomalies using Isolation Forest.
+2024-08-16 03:37:55,929 - INFO - Saved anomaly detection results to ./data/outputs/AAPL_quarterly_balance_sheet_anomalies.csv
+2024-08-16 03:37:55,929 - INFO - Analysis complete.
+2024-08-16 03:43:06,407 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 03:43:06,412 - INFO - Performing feature engineering on balance sheet data.
+2024-08-16 03:43:06,417 - WARNING - Insufficient dates to infer frequency. Setting to quarterly.
+2024-08-16 03:43:06,418 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 03:43:06,420 - INFO - Performing feature engineering on income statement data.
+2024-08-16 03:43:06,467 - INFO - Processed Income DataFrame:
+            tax_effect_of_unusual_items  ...  expense_rolling_mean
+2024-03-31                          0.0  ...                   NaN
+2023-12-31                          0.0  ...                   NaN
+2023-09-30                          0.0  ...                   NaN
+2023-06-30                          0.0  ...          6.584575e+10
+
+[4 rows x 44 columns]
+2024-08-16 03:43:06,467 - INFO - Total_debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 03:43:06,467 - INFO - Total_debt Series Content: [123930000000.0, 109280000000.0]
+2024-08-16 03:43:06,481 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 03:43:06,481 - ERROR - Mismatch in actual and forecast data sizes.
+2024-08-16 03:43:06,481 - INFO - Total_revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 03:43:06,481 - INFO - Total_revenue Series Content: [90753000000.0, 119575000000.0, 89498000000.0, 81797000000.0]
+2024-08-16 03:43:06,495 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 03:43:06,497 - ERROR - Error in analysis for AAPL: Input contains NaN.
+2024-08-16 13:58:49,012 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 13:58:49,028 - INFO - Missing data in ./data/loaded/AAPL_quarterly_balance_sheet.csv:
+treasury_shares_number                              0
+ordinary_shares_number                              0
+share_issued                                        0
+net_debt                                            0
+total_debt                                          0
+                                                   ..
+cash_cash_equivalents_and_short_term_investments    0
+other_short_term_investments                        0
+cash_and_cash_equivalents                           0
+cash_equivalents                                    0
+cash_financial                                      0
+Length: 70, dtype: int64
+2024-08-16 13:58:49,029 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_balance_sheet.csv:
+treasury_shares_number                              7
+ordinary_shares_number                              2
+share_issued                                        2
+net_debt                                            2
+total_debt                                          2
+                                                   ..
+cash_cash_equivalents_and_short_term_investments    2
+other_short_term_investments                        2
+cash_and_cash_equivalents                           2
+cash_equivalents                                    2
+cash_financial                                      2
+Length: 70, dtype: int64
+2024-08-16 13:58:49,052 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 13:58:49,053 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 13:58:49,057 - INFO - Missing data in ./data/loaded/AAPL_quarterly_income_statement.csv:
+tax_effect_of_unusual_items                                   0
+tax_rate_for_calcs                                            0
+normalized_ebitda                                             0
+net_income_from_continuing_operation_net_minority_interest    0
+reconciled_depreciation                                       0
+reconciled_cost_of_revenue                                    0
+ebitda                                                        0
+ebit                                                          0
+net_interest_income                                           0
+interest_expense                                              0
+interest_income                                               0
+normalized_income                                             0
+net_income_from_continuing_and_discontinued_operation         0
+total_expenses                                                0
+total_operating_income_as_reported                            0
+diluted_average_shares                                        0
+basic_average_shares                                          0
+diluted_eps                                                   0
+basic_eps                                                     0
+diluted_ni_availto_com_stockholders                           0
+net_income_common_stockholders                                0
+net_income                                                    0
+net_income_including_noncontrolling_interests                 0
+net_income_continuous_operations                              0
+tax_provision                                                 0
+pretax_income                                                 0
+other_income_expense                                          0
+other_non_operating_income_expenses                           0
+net_non_operating_interest_income_expense                     0
+interest_expense_non_operating                                0
+interest_income_non_operating                                 0
+operating_income                                              0
+operating_expense                                             0
+research_and_development                                      0
+selling_general_and_administration                            0
+gross_profit                                                  0
+cost_of_revenue                                               0
+total_revenue                                                 0
+operating_revenue                                             0
+revenue_growth                                                0
+expense_ratio                                                 0
+net_income_margin                                             0
+dtype: int64
+2024-08-16 13:58:49,058 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_income_statement.csv:
+tax_effect_of_unusual_items                                   4
+tax_rate_for_calcs                                            0
+normalized_ebitda                                             0
+net_income_from_continuing_operation_net_minority_interest    0
+reconciled_depreciation                                       0
+reconciled_cost_of_revenue                                    0
+ebitda                                                        0
+ebit                                                          0
+net_interest_income                                           2
+interest_expense                                              2
+interest_income                                               2
+normalized_income                                             0
+net_income_from_continuing_and_discontinued_operation         0
+total_expenses                                                0
+total_operating_income_as_reported                            0
+diluted_average_shares                                        0
+basic_average_shares                                          0
+diluted_eps                                                   0
+basic_eps                                                     0
+diluted_ni_availto_com_stockholders                           0
+net_income_common_stockholders                                0
+net_income                                                    0
+net_income_including_noncontrolling_interests                 0
+net_income_continuous_operations                              0
+tax_provision                                                 0
+pretax_income                                                 0
+other_income_expense                                          0
+other_non_operating_income_expenses                           0
+net_non_operating_interest_income_expense                     2
+interest_expense_non_operating                                2
+interest_income_non_operating                                 2
+operating_income                                              0
+operating_expense                                             0
+research_and_development                                      0
+selling_general_and_administration                            0
+gross_profit                                                  0
+cost_of_revenue                                               0
+total_revenue                                                 0
+operating_revenue                                             0
+revenue_growth                                                0
+expense_ratio                                                 0
+net_income_margin                                             0
+dtype: int64
+2024-08-16 13:58:49,061 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 13:58:49,061 - INFO - Loading data from ./data/loaded/AAPL_quarterly_cash_flow.csv
+2024-08-16 13:58:49,065 - INFO - Missing data in ./data/loaded/AAPL_quarterly_cash_flow.csv:
+free_cash_flow                                    0
+repurchase_of_capital_stock                       0
+repayment_of_debt                                 0
+issuance_of_debt                                  0
+capital_expenditure                               0
+interest_paid_supplemental_data                   0
+income_tax_paid_supplemental_data                 0
+end_cash_position                                 0
+beginning_cash_position                           0
+changes_in_cash                                   0
+financing_cash_flow                               0
+cash_flow_from_continuing_financing_activities    0
+net_other_financing_charges                       0
+cash_dividends_paid                               0
+common_stock_dividend_paid                        0
+net_common_stock_issuance                         0
+common_stock_payments                             0
+net_issuance_payments_of_debt                     0
+net_short_term_debt_issuance                      0
+short_term_debt_payments                          0
+net_long_term_debt_issuance                       0
+long_term_debt_payments                           0
+long_term_debt_issuance                           0
+investing_cash_flow                               0
+cash_flow_from_continuing_investing_activities    0
+net_other_investing_changes                       0
+net_investment_purchase_and_sale                  0
+sale_of_investment                                0
+purchase_of_investment                            0
+net_ppe_purchase_and_sale                         0
+purchase_of_ppe                                   0
+operating_cash_flow                               0
+cash_flow_from_continuing_operating_activities    0
+change_in_working_capital                         0
+change_in_other_working_capital                   0
+change_in_other_current_liabilities               0
+change_in_other_current_assets                    0
+change_in_payables_and_accrued_expense            0
+change_in_payable                                 0
+change_in_account_payable                         0
+change_in_inventory                               0
+change_in_receivables                             0
+changes_in_account_receivables                    0
+other_non_cash_items                              0
+stock_based_compensation                          0
+depreciation_amortization_depletion               0
+depreciation_and_amortization                     0
+net_income_from_continuing_operations             0
+dtype: int64
+2024-08-16 13:58:49,065 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_cash_flow.csv:
+free_cash_flow                                    2
+repurchase_of_capital_stock                       2
+repayment_of_debt                                 3
+issuance_of_debt                                  7
+capital_expenditure                               2
+interest_paid_supplemental_data                   3
+income_tax_paid_supplemental_data                 2
+end_cash_position                                 2
+beginning_cash_position                           2
+changes_in_cash                                   2
+financing_cash_flow                               2
+cash_flow_from_continuing_financing_activities    2
+net_other_financing_charges                       2
+cash_dividends_paid                               2
+common_stock_dividend_paid                        2
+net_common_stock_issuance                         2
+common_stock_payments                             2
+net_issuance_payments_of_debt                     2
+net_short_term_debt_issuance                      2
+short_term_debt_payments                          2
+net_long_term_debt_issuance                       4
+long_term_debt_payments                           4
+long_term_debt_issuance                           7
+investing_cash_flow                               2
+cash_flow_from_continuing_investing_activities    2
+net_other_investing_changes                       2
+net_investment_purchase_and_sale                  2
+sale_of_investment                                2
+purchase_of_investment                            2
+net_ppe_purchase_and_sale                         2
+purchase_of_ppe                                   2
+operating_cash_flow                               2
+cash_flow_from_continuing_operating_activities    2
+change_in_working_capital                         2
+change_in_other_working_capital                   6
+change_in_other_current_liabilities               2
+change_in_other_current_assets                    2
+change_in_payables_and_accrued_expense            2
+change_in_payable                                 2
+change_in_account_payable                         2
+change_in_inventory                               2
+change_in_receivables                             2
+changes_in_account_receivables                    2
+other_non_cash_items                              2
+stock_based_compensation                          2
+depreciation_amortization_depletion               2
+depreciation_and_amortization                     2
+net_income_from_continuing_operations             2
+dtype: int64
+2024-08-16 13:58:49,072 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 14:00:37,277 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 14:00:37,296 - INFO - Missing data in ./data/loaded/AAPL_quarterly_balance_sheet.csv:
+treasury_shares_number                              0
+ordinary_shares_number                              0
+share_issued                                        0
+net_debt                                            0
+total_debt                                          0
+                                                   ..
+cash_cash_equivalents_and_short_term_investments    0
+other_short_term_investments                        0
+cash_and_cash_equivalents                           0
+cash_equivalents                                    0
+cash_financial                                      0
+Length: 70, dtype: int64
+2024-08-16 14:00:37,297 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_balance_sheet.csv:
+treasury_shares_number                              7
+ordinary_shares_number                              2
+share_issued                                        2
+net_debt                                            2
+total_debt                                          2
+                                                   ..
+cash_cash_equivalents_and_short_term_investments    2
+other_short_term_investments                        2
+cash_and_cash_equivalents                           2
+cash_equivalents                                    2
+cash_financial                                      2
+Length: 70, dtype: int64
+2024-08-16 14:00:37,324 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 14:00:37,324 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 14:00:37,328 - INFO - Missing data in ./data/loaded/AAPL_quarterly_income_statement.csv:
+tax_effect_of_unusual_items                                   0
+tax_rate_for_calcs                                            0
+normalized_ebitda                                             0
+net_income_from_continuing_operation_net_minority_interest    0
+reconciled_depreciation                                       0
+reconciled_cost_of_revenue                                    0
+ebitda                                                        0
+ebit                                                          0
+net_interest_income                                           0
+interest_expense                                              0
+interest_income                                               0
+normalized_income                                             0
+net_income_from_continuing_and_discontinued_operation         0
+total_expenses                                                0
+total_operating_income_as_reported                            0
+diluted_average_shares                                        0
+basic_average_shares                                          0
+diluted_eps                                                   0
+basic_eps                                                     0
+diluted_ni_availto_com_stockholders                           0
+net_income_common_stockholders                                0
+net_income                                                    0
+net_income_including_noncontrolling_interests                 0
+net_income_continuous_operations                              0
+tax_provision                                                 0
+pretax_income                                                 0
+other_income_expense                                          0
+other_non_operating_income_expenses                           0
+net_non_operating_interest_income_expense                     0
+interest_expense_non_operating                                0
+interest_income_non_operating                                 0
+operating_income                                              0
+operating_expense                                             0
+research_and_development                                      0
+selling_general_and_administration                            0
+gross_profit                                                  0
+cost_of_revenue                                               0
+total_revenue                                                 0
+operating_revenue                                             0
+revenue_growth                                                0
+expense_ratio                                                 0
+net_income_margin                                             0
+dtype: int64
+2024-08-16 14:00:37,329 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_income_statement.csv:
+tax_effect_of_unusual_items                                   4
+tax_rate_for_calcs                                            0
+normalized_ebitda                                             0
+net_income_from_continuing_operation_net_minority_interest    0
+reconciled_depreciation                                       0
+reconciled_cost_of_revenue                                    0
+ebitda                                                        0
+ebit                                                          0
+net_interest_income                                           2
+interest_expense                                              2
+interest_income                                               2
+normalized_income                                             0
+net_income_from_continuing_and_discontinued_operation         0
+total_expenses                                                0
+total_operating_income_as_reported                            0
+diluted_average_shares                                        0
+basic_average_shares                                          0
+diluted_eps                                                   0
+basic_eps                                                     0
+diluted_ni_availto_com_stockholders                           0
+net_income_common_stockholders                                0
+net_income                                                    0
+net_income_including_noncontrolling_interests                 0
+net_income_continuous_operations                              0
+tax_provision                                                 0
+pretax_income                                                 0
+other_income_expense                                          0
+other_non_operating_income_expenses                           0
+net_non_operating_interest_income_expense                     2
+interest_expense_non_operating                                2
+interest_income_non_operating                                 2
+operating_income                                              0
+operating_expense                                             0
+research_and_development                                      0
+selling_general_and_administration                            0
+gross_profit                                                  0
+cost_of_revenue                                               0
+total_revenue                                                 0
+operating_revenue                                             0
+revenue_growth                                                0
+expense_ratio                                                 0
+net_income_margin                                             0
+dtype: int64
+2024-08-16 14:00:37,333 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 14:00:37,333 - INFO - Loading data from ./data/loaded/AAPL_quarterly_cash_flow.csv
+2024-08-16 14:00:37,336 - INFO - Missing data in ./data/loaded/AAPL_quarterly_cash_flow.csv:
+free_cash_flow                                    0
+repurchase_of_capital_stock                       0
+repayment_of_debt                                 0
+issuance_of_debt                                  0
+capital_expenditure                               0
+interest_paid_supplemental_data                   0
+income_tax_paid_supplemental_data                 0
+end_cash_position                                 0
+beginning_cash_position                           0
+changes_in_cash                                   0
+financing_cash_flow                               0
+cash_flow_from_continuing_financing_activities    0
+net_other_financing_charges                       0
+cash_dividends_paid                               0
+common_stock_dividend_paid                        0
+net_common_stock_issuance                         0
+common_stock_payments                             0
+net_issuance_payments_of_debt                     0
+net_short_term_debt_issuance                      0
+short_term_debt_payments                          0
+net_long_term_debt_issuance                       0
+long_term_debt_payments                           0
+long_term_debt_issuance                           0
+investing_cash_flow                               0
+cash_flow_from_continuing_investing_activities    0
+net_other_investing_changes                       0
+net_investment_purchase_and_sale                  0
+sale_of_investment                                0
+purchase_of_investment                            0
+net_ppe_purchase_and_sale                         0
+purchase_of_ppe                                   0
+operating_cash_flow                               0
+cash_flow_from_continuing_operating_activities    0
+change_in_working_capital                         0
+change_in_other_working_capital                   0
+change_in_other_current_liabilities               0
+change_in_other_current_assets                    0
+change_in_payables_and_accrued_expense            0
+change_in_payable                                 0
+change_in_account_payable                         0
+change_in_inventory                               0
+change_in_receivables                             0
+changes_in_account_receivables                    0
+other_non_cash_items                              0
+stock_based_compensation                          0
+depreciation_amortization_depletion               0
+depreciation_and_amortization                     0
+net_income_from_continuing_operations             0
+dtype: int64
+2024-08-16 14:00:37,337 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_cash_flow.csv:
+free_cash_flow                                    2
+repurchase_of_capital_stock                       2
+repayment_of_debt                                 3
+issuance_of_debt                                  7
+capital_expenditure                               2
+interest_paid_supplemental_data                   3
+income_tax_paid_supplemental_data                 2
+end_cash_position                                 2
+beginning_cash_position                           2
+changes_in_cash                                   2
+financing_cash_flow                               2
+cash_flow_from_continuing_financing_activities    2
+net_other_financing_charges                       2
+cash_dividends_paid                               2
+common_stock_dividend_paid                        2
+net_common_stock_issuance                         2
+common_stock_payments                             2
+net_issuance_payments_of_debt                     2
+net_short_term_debt_issuance                      2
+short_term_debt_payments                          2
+net_long_term_debt_issuance                       4
+long_term_debt_payments                           4
+long_term_debt_issuance                           7
+investing_cash_flow                               2
+cash_flow_from_continuing_investing_activities    2
+net_other_investing_changes                       2
+net_investment_purchase_and_sale                  2
+sale_of_investment                                2
+purchase_of_investment                            2
+net_ppe_purchase_and_sale                         2
+purchase_of_ppe                                   2
+operating_cash_flow                               2
+cash_flow_from_continuing_operating_activities    2
+change_in_working_capital                         2
+change_in_other_working_capital                   6
+change_in_other_current_liabilities               2
+change_in_other_current_assets                    2
+change_in_payables_and_accrued_expense            2
+change_in_payable                                 2
+change_in_account_payable                         2
+change_in_inventory                               2
+change_in_receivables                             2
+changes_in_account_receivables                    2
+other_non_cash_items                              2
+stock_based_compensation                          2
+depreciation_amortization_depletion               2
+depreciation_and_amortization                     2
+net_income_from_continuing_operations             2
+dtype: int64
+2024-08-16 14:00:37,344 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 14:00:37,480 - INFO - Performing feature engineering.
+2024-08-16 14:07:59,122 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 14:07:59,131 - INFO - Missing data in ./data/loaded/AAPL_quarterly_balance_sheet.csv:
+treasury_shares_number                              0
+ordinary_shares_number                              0
+share_issued                                        0
+net_debt                                            0
+total_debt                                          0
+                                                   ..
+cash_cash_equivalents_and_short_term_investments    0
+other_short_term_investments                        0
+cash_and_cash_equivalents                           0
+cash_equivalents                                    0
+cash_financial                                      0
+Length: 70, dtype: int64
+2024-08-16 14:07:59,132 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_balance_sheet.csv:
+treasury_shares_number                              7
+ordinary_shares_number                              2
+share_issued                                        2
+net_debt                                            2
+total_debt                                          2
+                                                   ..
+cash_cash_equivalents_and_short_term_investments    2
+other_short_term_investments                        2
+cash_and_cash_equivalents                           2
+cash_equivalents                                    2
+cash_financial                                      2
+Length: 70, dtype: int64
+2024-08-16 14:07:59,145 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 14:07:59,145 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 14:07:59,147 - INFO - Missing data in ./data/loaded/AAPL_quarterly_income_statement.csv:
+tax_effect_of_unusual_items                                   0
+tax_rate_for_calcs                                            0
+normalized_ebitda                                             0
+net_income_from_continuing_operation_net_minority_interest    0
+reconciled_depreciation                                       0
+reconciled_cost_of_revenue                                    0
+ebitda                                                        0
+ebit                                                          0
+net_interest_income                                           0
+interest_expense                                              0
+interest_income                                               0
+normalized_income                                             0
+net_income_from_continuing_and_discontinued_operation         0
+total_expenses                                                0
+total_operating_income_as_reported                            0
+diluted_average_shares                                        0
+basic_average_shares                                          0
+diluted_eps                                                   0
+basic_eps                                                     0
+diluted_ni_availto_com_stockholders                           0
+net_income_common_stockholders                                0
+net_income                                                    0
+net_income_including_noncontrolling_interests                 0
+net_income_continuous_operations                              0
+tax_provision                                                 0
+pretax_income                                                 0
+other_income_expense                                          0
+other_non_operating_income_expenses                           0
+net_non_operating_interest_income_expense                     0
+interest_expense_non_operating                                0
+interest_income_non_operating                                 0
+operating_income                                              0
+operating_expense                                             0
+research_and_development                                      0
+selling_general_and_administration                            0
+gross_profit                                                  0
+cost_of_revenue                                               0
+total_revenue                                                 0
+operating_revenue                                             0
+revenue_growth                                                0
+expense_ratio                                                 0
+net_income_margin                                             0
+dtype: int64
+2024-08-16 14:07:59,148 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_income_statement.csv:
+tax_effect_of_unusual_items                                   4
+tax_rate_for_calcs                                            0
+normalized_ebitda                                             0
+net_income_from_continuing_operation_net_minority_interest    0
+reconciled_depreciation                                       0
+reconciled_cost_of_revenue                                    0
+ebitda                                                        0
+ebit                                                          0
+net_interest_income                                           2
+interest_expense                                              2
+interest_income                                               2
+normalized_income                                             0
+net_income_from_continuing_and_discontinued_operation         0
+total_expenses                                                0
+total_operating_income_as_reported                            0
+diluted_average_shares                                        0
+basic_average_shares                                          0
+diluted_eps                                                   0
+basic_eps                                                     0
+diluted_ni_availto_com_stockholders                           0
+net_income_common_stockholders                                0
+net_income                                                    0
+net_income_including_noncontrolling_interests                 0
+net_income_continuous_operations                              0
+tax_provision                                                 0
+pretax_income                                                 0
+other_income_expense                                          0
+other_non_operating_income_expenses                           0
+net_non_operating_interest_income_expense                     2
+interest_expense_non_operating                                2
+interest_income_non_operating                                 2
+operating_income                                              0
+operating_expense                                             0
+research_and_development                                      0
+selling_general_and_administration                            0
+gross_profit                                                  0
+cost_of_revenue                                               0
+total_revenue                                                 0
+operating_revenue                                             0
+revenue_growth                                                0
+expense_ratio                                                 0
+net_income_margin                                             0
+dtype: int64
+2024-08-16 14:07:59,151 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 14:07:59,151 - INFO - Loading data from ./data/loaded/AAPL_quarterly_cash_flow.csv
+2024-08-16 14:07:59,153 - INFO - Missing data in ./data/loaded/AAPL_quarterly_cash_flow.csv:
+free_cash_flow                                    0
+repurchase_of_capital_stock                       0
+repayment_of_debt                                 0
+issuance_of_debt                                  0
+capital_expenditure                               0
+interest_paid_supplemental_data                   0
+income_tax_paid_supplemental_data                 0
+end_cash_position                                 0
+beginning_cash_position                           0
+changes_in_cash                                   0
+financing_cash_flow                               0
+cash_flow_from_continuing_financing_activities    0
+net_other_financing_charges                       0
+cash_dividends_paid                               0
+common_stock_dividend_paid                        0
+net_common_stock_issuance                         0
+common_stock_payments                             0
+net_issuance_payments_of_debt                     0
+net_short_term_debt_issuance                      0
+short_term_debt_payments                          0
+net_long_term_debt_issuance                       0
+long_term_debt_payments                           0
+long_term_debt_issuance                           0
+investing_cash_flow                               0
+cash_flow_from_continuing_investing_activities    0
+net_other_investing_changes                       0
+net_investment_purchase_and_sale                  0
+sale_of_investment                                0
+purchase_of_investment                            0
+net_ppe_purchase_and_sale                         0
+purchase_of_ppe                                   0
+operating_cash_flow                               0
+cash_flow_from_continuing_operating_activities    0
+change_in_working_capital                         0
+change_in_other_working_capital                   0
+change_in_other_current_liabilities               0
+change_in_other_current_assets                    0
+change_in_payables_and_accrued_expense            0
+change_in_payable                                 0
+change_in_account_payable                         0
+change_in_inventory                               0
+change_in_receivables                             0
+changes_in_account_receivables                    0
+other_non_cash_items                              0
+stock_based_compensation                          0
+depreciation_amortization_depletion               0
+depreciation_and_amortization                     0
+net_income_from_continuing_operations             0
+dtype: int64
+2024-08-16 14:07:59,154 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_cash_flow.csv:
+free_cash_flow                                    2
+repurchase_of_capital_stock                       2
+repayment_of_debt                                 3
+issuance_of_debt                                  7
+capital_expenditure                               2
+interest_paid_supplemental_data                   3
+income_tax_paid_supplemental_data                 2
+end_cash_position                                 2
+beginning_cash_position                           2
+changes_in_cash                                   2
+financing_cash_flow                               2
+cash_flow_from_continuing_financing_activities    2
+net_other_financing_charges                       2
+cash_dividends_paid                               2
+common_stock_dividend_paid                        2
+net_common_stock_issuance                         2
+common_stock_payments                             2
+net_issuance_payments_of_debt                     2
+net_short_term_debt_issuance                      2
+short_term_debt_payments                          2
+net_long_term_debt_issuance                       4
+long_term_debt_payments                           4
+long_term_debt_issuance                           7
+investing_cash_flow                               2
+cash_flow_from_continuing_investing_activities    2
+net_other_investing_changes                       2
+net_investment_purchase_and_sale                  2
+sale_of_investment                                2
+purchase_of_investment                            2
+net_ppe_purchase_and_sale                         2
+purchase_of_ppe                                   2
+operating_cash_flow                               2
+cash_flow_from_continuing_operating_activities    2
+change_in_working_capital                         2
+change_in_other_working_capital                   6
+change_in_other_current_liabilities               2
+change_in_other_current_assets                    2
+change_in_payables_and_accrued_expense            2
+change_in_payable                                 2
+change_in_account_payable                         2
+change_in_inventory                               2
+change_in_receivables                             2
+changes_in_account_receivables                    2
+other_non_cash_items                              2
+stock_based_compensation                          2
+depreciation_amortization_depletion               2
+depreciation_and_amortization                     2
+net_income_from_continuing_operations             2
+dtype: int64
+2024-08-16 14:07:59,159 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 14:07:59,281 - INFO - Performing feature engineering.
+2024-08-16 14:09:29,205 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 14:09:29,217 - INFO - Missing data in ./data/loaded/AAPL_quarterly_balance_sheet.csv:
+treasury_shares_number                              0
+ordinary_shares_number                              0
+share_issued                                        0
+net_debt                                            0
+total_debt                                          0
+                                                   ..
+cash_cash_equivalents_and_short_term_investments    0
+other_short_term_investments                        0
+cash_and_cash_equivalents                           0
+cash_equivalents                                    0
+cash_financial                                      0
+Length: 70, dtype: int64
+2024-08-16 14:09:29,218 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_balance_sheet.csv:
+treasury_shares_number                              7
+ordinary_shares_number                              2
+share_issued                                        2
+net_debt                                            2
+total_debt                                          2
+                                                   ..
+cash_cash_equivalents_and_short_term_investments    2
+other_short_term_investments                        2
+cash_and_cash_equivalents                           2
+cash_equivalents                                    2
+cash_financial                                      2
+Length: 70, dtype: int64
+2024-08-16 14:09:29,233 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 14:09:29,233 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 14:09:29,235 - INFO - Missing data in ./data/loaded/AAPL_quarterly_income_statement.csv:
+tax_effect_of_unusual_items                                   0
+tax_rate_for_calcs                                            0
+normalized_ebitda                                             0
+net_income_from_continuing_operation_net_minority_interest    0
+reconciled_depreciation                                       0
+reconciled_cost_of_revenue                                    0
+ebitda                                                        0
+ebit                                                          0
+net_interest_income                                           0
+interest_expense                                              0
+interest_income                                               0
+normalized_income                                             0
+net_income_from_continuing_and_discontinued_operation         0
+total_expenses                                                0
+total_operating_income_as_reported                            0
+diluted_average_shares                                        0
+basic_average_shares                                          0
+diluted_eps                                                   0
+basic_eps                                                     0
+diluted_ni_availto_com_stockholders                           0
+net_income_common_stockholders                                0
+net_income                                                    0
+net_income_including_noncontrolling_interests                 0
+net_income_continuous_operations                              0
+tax_provision                                                 0
+pretax_income                                                 0
+other_income_expense                                          0
+other_non_operating_income_expenses                           0
+net_non_operating_interest_income_expense                     0
+interest_expense_non_operating                                0
+interest_income_non_operating                                 0
+operating_income                                              0
+operating_expense                                             0
+research_and_development                                      0
+selling_general_and_administration                            0
+gross_profit                                                  0
+cost_of_revenue                                               0
+total_revenue                                                 0
+operating_revenue                                             0
+revenue_growth                                                0
+expense_ratio                                                 0
+net_income_margin                                             0
+dtype: int64
+2024-08-16 14:09:29,236 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_income_statement.csv:
+tax_effect_of_unusual_items                                   4
+tax_rate_for_calcs                                            0
+normalized_ebitda                                             0
+net_income_from_continuing_operation_net_minority_interest    0
+reconciled_depreciation                                       0
+reconciled_cost_of_revenue                                    0
+ebitda                                                        0
+ebit                                                          0
+net_interest_income                                           2
+interest_expense                                              2
+interest_income                                               2
+normalized_income                                             0
+net_income_from_continuing_and_discontinued_operation         0
+total_expenses                                                0
+total_operating_income_as_reported                            0
+diluted_average_shares                                        0
+basic_average_shares                                          0
+diluted_eps                                                   0
+basic_eps                                                     0
+diluted_ni_availto_com_stockholders                           0
+net_income_common_stockholders                                0
+net_income                                                    0
+net_income_including_noncontrolling_interests                 0
+net_income_continuous_operations                              0
+tax_provision                                                 0
+pretax_income                                                 0
+other_income_expense                                          0
+other_non_operating_income_expenses                           0
+net_non_operating_interest_income_expense                     2
+interest_expense_non_operating                                2
+interest_income_non_operating                                 2
+operating_income                                              0
+operating_expense                                             0
+research_and_development                                      0
+selling_general_and_administration                            0
+gross_profit                                                  0
+cost_of_revenue                                               0
+total_revenue                                                 0
+operating_revenue                                             0
+revenue_growth                                                0
+expense_ratio                                                 0
+net_income_margin                                             0
+dtype: int64
+2024-08-16 14:09:29,238 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 14:09:29,238 - INFO - Loading data from ./data/loaded/AAPL_quarterly_cash_flow.csv
+2024-08-16 14:09:29,241 - INFO - Missing data in ./data/loaded/AAPL_quarterly_cash_flow.csv:
+free_cash_flow                                    0
+repurchase_of_capital_stock                       0
+repayment_of_debt                                 0
+issuance_of_debt                                  0
+capital_expenditure                               0
+interest_paid_supplemental_data                   0
+income_tax_paid_supplemental_data                 0
+end_cash_position                                 0
+beginning_cash_position                           0
+changes_in_cash                                   0
+financing_cash_flow                               0
+cash_flow_from_continuing_financing_activities    0
+net_other_financing_charges                       0
+cash_dividends_paid                               0
+common_stock_dividend_paid                        0
+net_common_stock_issuance                         0
+common_stock_payments                             0
+net_issuance_payments_of_debt                     0
+net_short_term_debt_issuance                      0
+short_term_debt_payments                          0
+net_long_term_debt_issuance                       0
+long_term_debt_payments                           0
+long_term_debt_issuance                           0
+investing_cash_flow                               0
+cash_flow_from_continuing_investing_activities    0
+net_other_investing_changes                       0
+net_investment_purchase_and_sale                  0
+sale_of_investment                                0
+purchase_of_investment                            0
+net_ppe_purchase_and_sale                         0
+purchase_of_ppe                                   0
+operating_cash_flow                               0
+cash_flow_from_continuing_operating_activities    0
+change_in_working_capital                         0
+change_in_other_working_capital                   0
+change_in_other_current_liabilities               0
+change_in_other_current_assets                    0
+change_in_payables_and_accrued_expense            0
+change_in_payable                                 0
+change_in_account_payable                         0
+change_in_inventory                               0
+change_in_receivables                             0
+changes_in_account_receivables                    0
+other_non_cash_items                              0
+stock_based_compensation                          0
+depreciation_amortization_depletion               0
+depreciation_and_amortization                     0
+net_income_from_continuing_operations             0
+dtype: int64
+2024-08-16 14:09:29,242 - INFO - Zero-filled data in ./data/loaded/AAPL_quarterly_cash_flow.csv:
+free_cash_flow                                    2
+repurchase_of_capital_stock                       2
+repayment_of_debt                                 3
+issuance_of_debt                                  7
+capital_expenditure                               2
+interest_paid_supplemental_data                   3
+income_tax_paid_supplemental_data                 2
+end_cash_position                                 2
+beginning_cash_position                           2
+changes_in_cash                                   2
+financing_cash_flow                               2
+cash_flow_from_continuing_financing_activities    2
+net_other_financing_charges                       2
+cash_dividends_paid                               2
+common_stock_dividend_paid                        2
+net_common_stock_issuance                         2
+common_stock_payments                             2
+net_issuance_payments_of_debt                     2
+net_short_term_debt_issuance                      2
+short_term_debt_payments                          2
+net_long_term_debt_issuance                       4
+long_term_debt_payments                           4
+long_term_debt_issuance                           7
+investing_cash_flow                               2
+cash_flow_from_continuing_investing_activities    2
+net_other_investing_changes                       2
+net_investment_purchase_and_sale                  2
+sale_of_investment                                2
+purchase_of_investment                            2
+net_ppe_purchase_and_sale                         2
+purchase_of_ppe                                   2
+operating_cash_flow                               2
+cash_flow_from_continuing_operating_activities    2
+change_in_working_capital                         2
+change_in_other_working_capital                   6
+change_in_other_current_liabilities               2
+change_in_other_current_assets                    2
+change_in_payables_and_accrued_expense            2
+change_in_payable                                 2
+change_in_account_payable                         2
+change_in_inventory                               2
+change_in_receivables                             2
+changes_in_account_receivables                    2
+other_non_cash_items                              2
+stock_based_compensation                          2
+depreciation_amortization_depletion               2
+depreciation_and_amortization                     2
+net_income_from_continuing_operations             2
+dtype: int64
+2024-08-16 14:09:29,247 - INFO - Inferred frequency: -1QE-DEC
+2024-08-16 14:09:29,383 - INFO - Performing feature engineering.
+2024-08-16 14:51:35,790 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 14:51:35,814 - INFO - Performing feature engineering on the data.
+2024-08-16 14:51:35,818 - INFO - Total_revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 14:51:35,818 - INFO - Total_revenue Series Content: [90753000000.0, 119575000000.0, 89498000000.0, 81797000000.0]
+2024-08-16 14:51:35,873 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 14:54:21,459 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 14:54:21,476 - INFO - Performing feature engineering on the data.
+2024-08-16 14:54:21,491 - INFO - Total_revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 14:54:21,491 - INFO - Total_revenue Series Content: [81797000000.0, 89498000000.0, 119575000000.0, 90753000000.0]
+2024-08-16 14:54:21,520 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 14:56:32,970 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 14:56:32,982 - INFO - Performing feature engineering on the data.
+2024-08-16 14:56:32,986 - ERROR - Error in analysis for AAPL: 'DataFrame' object has no attribute 'as_freq'
+2024-08-16 15:43:37,799 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 15:43:37,810 - INFO - Performing feature engineering on the data.
+2024-08-16 15:43:37,824 - INFO - Total_revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 15:43:37,824 - INFO - Total_revenue Series Content: [81797000000.0, 89498000000.0, 119575000000.0, 90753000000.0]
+2024-08-16 15:43:37,846 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 15:43:37,851 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 15:43:37,854 - INFO - Performing feature engineering on the data.
+2024-08-16 15:43:37,855 - INFO - Total_debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 15:43:37,856 - INFO - Total_debt Series Content: [0.0, 0.0, 109280000000.0, 123930000000.0, 108040000000.0, 104590000000.0, 101304000000.0]
+2024-08-16 15:43:37,869 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 16:04:53,995 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_anomalies.csv
+2024-08-16 16:04:54,003 - ERROR - Error in evaluating anomalies for AAPL: 'true_anomalies'
+2024-08-16 16:10:09,071 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 16:10:09,086 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 16:10:09,092 - ERROR - Error in evaluating forecast for AAPL: "None of [Index(['2024-06-30', '2024-09-30', '2024-12-31', '2025-03-31'], dtype='object')] are in the [index]"
+2024-08-16 16:13:55,960 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 16:13:55,976 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 16:13:55,981 - ERROR - Error in evaluating forecast: Found array with 0 sample(s) (shape=(0,)) while a minimum of 1 is required.
+2024-08-16 16:13:55,982 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 16:16:41,902 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 16:16:41,917 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 16:16:41,922 - ERROR - Aligned series are empty, unable to evaluate forecast.
+2024-08-16 16:16:41,922 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 16:39:49,141 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 16:39:49,156 - INFO - Performing feature engineering on the data.
+2024-08-16 16:39:49,170 - INFO - Splitting data with train size 0.8
+2024-08-16 16:39:49,256 - INFO - Data splitting complete for AAPL.
+2024-08-16 16:50:52,865 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 16:50:52,875 - INFO - Performing feature engineering on the data.
+2024-08-16 16:50:52,928 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 16:50:52,960 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 16:50:52,982 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 17:19:19,333 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:19:19,348 - INFO - Performing feature engineering on the data.
+2024-08-16 17:19:19,413 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 17:19:19,444 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 17:19:19,467 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 17:19:37,912 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:19:37,918 - INFO - Performing feature engineering on the data.
+2024-08-16 17:19:37,964 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 17:19:37,997 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 17:19:38,006 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 17:20:41,109 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:20:41,114 - INFO - Performing feature engineering on the data.
+2024-08-16 17:20:41,159 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 17:20:41,192 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 17:20:41,206 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 17:27:37,963 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:27:37,976 - INFO - Performing feature engineering on the data.
+2024-08-16 17:27:38,035 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 17:27:38,068 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 17:27:38,080 - ERROR - Error in evaluating forecast for AAPL: 'HoltWintersResults' object has no attribute 'fit'
+2024-08-16 17:29:05,619 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:29:05,635 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 17:29:05,668 - ERROR - Error in evaluating forecast: Prediction must have `end` after `start`.
+2024-08-16 17:30:51,851 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:30:51,864 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 17:30:51,895 - ERROR - Error in evaluating forecast: Prediction must have `end` after `start`.
+2024-08-16 17:32:25,857 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:32:25,882 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 17:32:25,903 - ERROR - Error in evaluating forecast: Prediction must have `end` after `start`.
+2024-08-16 17:33:52,990 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:33:53,000 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 17:33:53,016 - ERROR - Error in evaluating forecast: index 0 is out of bounds for axis 0 with size 0
+2024-08-16 17:34:26,426 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:34:26,430 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 17:34:26,455 - ERROR - Error in evaluating forecast: Prediction must have `end` after `start`.
+2024-08-16 17:35:45,661 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:35:45,667 - INFO - Performing feature engineering on the data.
+2024-08-16 17:35:45,726 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 17:35:45,761 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 17:35:45,768 - ERROR - Error in evaluating forecast for AAPL: 'HoltWintersResults' object has no attribute 'fit'
+2024-08-16 17:42:22,347 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:42:22,351 - INFO - Performing feature engineering on the data.
+2024-08-16 17:42:22,399 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 17:42:22,435 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 17:42:22,453 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 17:44:20,347 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:44:20,351 - INFO - Performing feature engineering on the data.
+2024-08-16 17:44:20,397 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 17:44:20,430 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 17:44:20,444 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 17:48:41,409 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 17:48:41,413 - INFO - Performing feature engineering on the data.
+2024-08-16 17:48:41,419 - INFO - Saved training data to ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 17:48:41,419 - INFO - Saved validation data to ./data/outputs/AAPL_quarterly_income_statement_validation_data.csv
+2024-08-16 17:48:41,451 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 17:48:41,480 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 17:48:41,491 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 18:07:21,232 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 18:07:21,246 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 18:07:21,249 - INFO - Loading data from ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 18:07:22,238 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:07:22,240 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:07:22,241 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:07:22,242 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:07:22,831 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 18:07:22,845 - ERROR - Error in creating visualizations for AAPL: 'total_revenue'
+2024-08-16 18:19:46,684 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 18:19:46,689 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 18:19:46,692 - INFO - Loading data from ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 18:19:46,868 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:19:46,869 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:19:46,869 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:19:46,870 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:19:46,991 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 18:19:47,004 - ERROR - Error in creating visualizations for AAPL: 'total_revenue'
+2024-08-16 18:21:43,929 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 18:21:43,934 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 18:21:43,936 - INFO - Loading data from ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 18:21:44,106 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:21:44,107 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:21:44,107 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:21:44,108 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:21:44,235 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 18:21:44,248 - ERROR - Error in creating visualizations for AAPL: 'total_revenue'
+2024-08-16 18:31:27,846 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 18:31:27,860 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 18:31:27,863 - INFO - Loading data from ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 18:31:28,065 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:31:28,068 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:31:28,069 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:31:28,070 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:31:28,226 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 18:31:28,241 - ERROR - Error in creating visualizations for AAPL: 'total_revenue'
+2024-08-16 18:46:28,607 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 18:46:28,619 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 18:46:28,621 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 18:46:28,624 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 18:46:28,827 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:46:28,829 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:46:28,831 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:46:28,831 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:46:28,977 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 18:46:28,998 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:46:28,998 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:46:28,999 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:46:28,999 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:46:29,095 - INFO - Saved Time Series of Total Revenue and Total Debt plot to ./data/visualizations/AAPL_revenue_debt_time_series.png
+2024-08-16 18:46:29,095 - INFO - Visualization creation complete.
+2024-08-16 18:54:01,927 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 18:54:01,940 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 18:54:01,942 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 18:54:01,945 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 18:54:02,138 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,140 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,141 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,142 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,294 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 18:54:02,316 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,317 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,317 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,317 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,422 - INFO - Saved Time Series of Total Revenue and Total Debt plot to ./data/visualizations/AAPL_revenue_debt_time_series.png
+2024-08-16 18:54:02,422 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 18:54:02,425 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 18:54:02,428 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 18:54:02,428 - INFO - Loading data from ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 18:54:02,454 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,455 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,456 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,456 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,457 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,457 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,458 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,458 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 18:54:02,589 - INFO - Saved Historical vs. Forecasted plot to ./data/visualizations/AAPL_historical_vs_forecast.png
+2024-08-16 18:54:02,589 - INFO - Visualization creation complete.
+2024-08-16 18:58:46,753 - INFO - Starting extraction for AAPL
+2024-08-16 18:58:47,886 - INFO - Successfully extracted data for AAPL
+2024-08-16 18:58:47,889 - INFO - Saved extracted data to ./data/extracted/AAPL_income_statement.csv
+2024-08-16 18:58:47,890 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_income_statement.csv
+2024-08-16 18:58:47,891 - INFO - Saved extracted data to ./data/extracted/AAPL_balance_sheet.csv
+2024-08-16 18:58:47,892 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_balance_sheet.csv
+2024-08-16 18:58:47,892 - INFO - Saved extracted data to ./data/extracted/AAPL_cash_flow.csv
+2024-08-16 18:58:47,893 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_cash_flow.csv
+2024-08-16 18:58:47,893 - INFO - Data extraction complete.
+2024-08-16 18:58:47,972 - INFO - Successfully ran extract.py for ticker AAPL
+2024-08-16 18:58:51,460 - INFO - Processing data from file: ./data/extracted/AAPL_income_statement.csv
+2024-08-16 18:58:51,466 - INFO - Performing feature engineering for annual data.
+2024-08-16 18:58:51,472 - INFO - Saved transformed data to ./data/transformed/AAPL_income_statement.csv
+2024-08-16 18:58:51,472 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_income_statement.csv
+2024-08-16 18:58:51,474 - INFO - Performing feature engineering for quarterly data.
+2024-08-16 18:58:51,477 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_income_statement.csv
+2024-08-16 18:58:51,478 - INFO - Processing data from file: ./data/extracted/AAPL_balance_sheet.csv
+2024-08-16 18:58:51,480 - INFO - Performing feature engineering for annual data.
+2024-08-16 18:58:51,482 - INFO - Saved transformed data to ./data/transformed/AAPL_balance_sheet.csv
+2024-08-16 18:58:51,482 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_balance_sheet.csv
+2024-08-16 18:58:51,485 - INFO - Performing feature engineering for quarterly data.
+2024-08-16 18:58:51,487 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_balance_sheet.csv
+2024-08-16 18:58:51,488 - INFO - Processing data from file: ./data/extracted/AAPL_cash_flow.csv
+2024-08-16 18:58:51,492 - INFO - Performing feature engineering for annual data.
+2024-08-16 18:58:51,495 - INFO - Saved transformed data to ./data/transformed/AAPL_cash_flow.csv
+2024-08-16 18:58:51,495 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_cash_flow.csv
+2024-08-16 18:58:51,498 - INFO - Performing feature engineering for quarterly data.
+2024-08-16 18:58:51,500 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_cash_flow.csv
+2024-08-16 18:58:51,500 - INFO - Data transformation complete.
+2024-08-16 18:58:51,558 - INFO - Successfully ran transform.py for ticker AAPL
+2024-08-16 18:58:53,932 - INFO - Moving transformed data to loaded directory for ticker: AAPL
+2024-08-16 18:58:53,932 - INFO - Moved AAPL_quarterly_balance_sheet.csv to ./data/loaded
+2024-08-16 18:58:53,933 - INFO - Moved AAPL_quarterly_cash_flow.csv to ./data/loaded
+2024-08-16 18:58:53,933 - INFO - Moved AAPL_cash_flow.csv to ./data/loaded
+2024-08-16 18:58:53,933 - INFO - Moved AAPL_quarterly_income_statement.csv to ./data/loaded
+2024-08-16 18:58:53,933 - INFO - Moved AAPL_income_statement.csv to ./data/loaded
+2024-08-16 18:58:53,934 - INFO - Moved AAPL_balance_sheet.csv to ./data/loaded
+2024-08-16 18:58:53,934 - INFO - Data loading complete.
+2024-08-16 18:58:53,940 - INFO - Successfully ran load.py for ticker AAPL
+2024-08-16 18:58:57,457 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 18:58:57,460 - INFO - Performing feature engineering on the data.
+2024-08-16 18:58:57,506 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 18:58:57,533 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 18:58:57,550 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 18:58:57,696 - INFO - Successfully ran model.py for ticker AAPL
+2024-08-16 18:59:00,866 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 18:59:00,871 - INFO - Performing feature engineering on the data.
+2024-08-16 18:59:00,878 - INFO - Saved training data to ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 18:59:00,878 - INFO - Saved validation data to ./data/outputs/AAPL_quarterly_income_statement_validation_data.csv
+2024-08-16 18:59:00,922 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 18:59:00,956 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 18:59:00,967 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 18:59:01,099 - INFO - Successfully ran evaluate.py for ticker AAPL
+2024-08-16 18:59:03,895 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 18:59:03,899 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 18:59:03,899 - ERROR - Error in creating visualizations for AAPL: [Errno 2] No such file or directory: './data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv'
+2024-08-16 18:59:04,002 - INFO - Successfully ran visualizations.py for ticker AAPL
+2024-08-16 19:09:15,319 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 19:09:15,324 - INFO - Performing feature engineering on the data.
+2024-08-16 19:09:15,369 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 19:09:15,402 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 19:09:15,413 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 19:09:15,415 - INFO - Performing feature engineering on the data.
+2024-08-16 19:09:15,416 - INFO - Total_revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 19:09:15,416 - INFO - Total_revenue Series Content: [81797000000.0, 89498000000.0, 119575000000.0, 90753000000.0]
+2024-08-16 19:09:15,427 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 19:09:15,430 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 19:09:15,433 - INFO - Performing feature engineering on the data.
+2024-08-16 19:09:15,434 - INFO - Total_debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 19:09:15,434 - INFO - Total_debt Series Content: [0.0, 0.0, 109280000000.0, 123930000000.0, 108040000000.0, 104590000000.0, 101304000000.0]
+2024-08-16 19:09:15,446 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 19:09:15,449 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 19:10:09,647 - INFO - Starting extraction for AAPL
+2024-08-16 19:10:10,745 - INFO - Successfully extracted data for AAPL
+2024-08-16 19:10:10,747 - INFO - Saved extracted data to ./data/extracted/AAPL_income_statement.csv
+2024-08-16 19:10:10,748 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_income_statement.csv
+2024-08-16 19:10:10,748 - INFO - Saved extracted data to ./data/extracted/AAPL_balance_sheet.csv
+2024-08-16 19:10:10,749 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_balance_sheet.csv
+2024-08-16 19:10:10,750 - INFO - Saved extracted data to ./data/extracted/AAPL_cash_flow.csv
+2024-08-16 19:10:10,751 - INFO - Saved extracted data to ./data/extracted/AAPL_quarterly_cash_flow.csv
+2024-08-16 19:10:10,751 - INFO - Data extraction complete.
+2024-08-16 19:10:10,830 - INFO - Successfully ran extract.py for ticker AAPL
+2024-08-16 19:10:13,629 - INFO - Processing data from file: ./data/extracted/AAPL_income_statement.csv
+2024-08-16 19:10:13,633 - INFO - Performing feature engineering for annual data.
+2024-08-16 19:10:13,637 - INFO - Saved transformed data to ./data/transformed/AAPL_income_statement.csv
+2024-08-16 19:10:13,637 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_income_statement.csv
+2024-08-16 19:10:13,640 - INFO - Performing feature engineering for quarterly data.
+2024-08-16 19:10:13,643 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_income_statement.csv
+2024-08-16 19:10:13,643 - INFO - Processing data from file: ./data/extracted/AAPL_balance_sheet.csv
+2024-08-16 19:10:13,646 - INFO - Performing feature engineering for annual data.
+2024-08-16 19:10:13,648 - INFO - Saved transformed data to ./data/transformed/AAPL_balance_sheet.csv
+2024-08-16 19:10:13,648 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_balance_sheet.csv
+2024-08-16 19:10:13,652 - INFO - Performing feature engineering for quarterly data.
+2024-08-16 19:10:13,653 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_balance_sheet.csv
+2024-08-16 19:10:13,654 - INFO - Processing data from file: ./data/extracted/AAPL_cash_flow.csv
+2024-08-16 19:10:13,656 - INFO - Performing feature engineering for annual data.
+2024-08-16 19:10:13,659 - INFO - Saved transformed data to ./data/transformed/AAPL_cash_flow.csv
+2024-08-16 19:10:13,659 - INFO - Processing data from file: ./data/extracted/AAPL_quarterly_cash_flow.csv
+2024-08-16 19:10:13,661 - INFO - Performing feature engineering for quarterly data.
+2024-08-16 19:10:13,663 - INFO - Saved transformed data to ./data/transformed/AAPL_quarterly_cash_flow.csv
+2024-08-16 19:10:13,663 - INFO - Data transformation complete.
+2024-08-16 19:10:13,716 - INFO - Successfully ran transform.py for ticker AAPL
+2024-08-16 19:10:16,441 - INFO - Moving transformed data to loaded directory for ticker: AAPL
+2024-08-16 19:10:16,442 - INFO - Moved AAPL_quarterly_balance_sheet.csv to ./data/loaded
+2024-08-16 19:10:16,442 - INFO - Moved AAPL_quarterly_cash_flow.csv to ./data/loaded
+2024-08-16 19:10:16,442 - INFO - Moved AAPL_cash_flow.csv to ./data/loaded
+2024-08-16 19:10:16,443 - INFO - Moved AAPL_quarterly_income_statement.csv to ./data/loaded
+2024-08-16 19:10:16,443 - INFO - Moved AAPL_income_statement.csv to ./data/loaded
+2024-08-16 19:10:16,443 - INFO - Moved AAPL_balance_sheet.csv to ./data/loaded
+2024-08-16 19:10:16,443 - INFO - Data loading complete.
+2024-08-16 19:10:16,450 - INFO - Successfully ran load.py for ticker AAPL
+2024-08-16 19:10:19,905 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 19:10:19,909 - INFO - Performing feature engineering on the data.
+2024-08-16 19:10:19,951 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 19:10:19,978 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 19:10:19,989 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 19:10:19,991 - INFO - Performing feature engineering on the data.
+2024-08-16 19:10:19,992 - INFO - Total_revenue Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 19:10:19,992 - INFO - Total_revenue Series Content: [81797000000.0, 89498000000.0, 119575000000.0, 90753000000.0]
+2024-08-16 19:10:20,002 - INFO - Saved forecasted revenue to ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 19:10:20,005 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 19:10:20,008 - INFO - Performing feature engineering on the data.
+2024-08-16 19:10:20,010 - INFO - Total_debt Series Type: <class 'pandas.core.series.Series'>
+2024-08-16 19:10:20,010 - INFO - Total_debt Series Content: [0.0, 0.0, 109280000000.0, 123930000000.0, 108040000000.0, 104590000000.0, 101304000000.0]
+2024-08-16 19:10:20,022 - INFO - Saved forecasted debt to ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 19:10:20,026 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 19:10:20,159 - INFO - Successfully ran model.py for ticker AAPL
+2024-08-16 19:10:23,909 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 19:10:23,913 - INFO - Performing feature engineering on the data.
+2024-08-16 19:10:23,920 - INFO - Saved training data to ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 19:10:23,920 - INFO - Saved validation data to ./data/outputs/AAPL_quarterly_income_statement_validation_data.csv
+2024-08-16 19:10:23,963 - INFO - Training data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2023-06-30                          0.0  ...           0.243053
+2023-09-30                          0.0  ...           0.256497
+2023-12-31                          0.0  ...           0.283638
+
+[3 rows x 42 columns]
+
+2024-08-16 19:10:23,995 - INFO - Validation data:
+            tax_effect_of_unusual_items  ...  net_income_margin
+2024-03-31                          0.0  ...           0.260443
+
+[1 rows x 42 columns]
+
+2024-08-16 19:10:24,006 - INFO - Forecast evaluation complete for AAPL.
+2024-08-16 19:10:24,134 - INFO - Successfully ran evaluate.py for ticker AAPL
+2024-08-16 19:10:27,483 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 19:10:27,487 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 19:10:27,488 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 19:10:27,490 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 19:10:27,687 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:27,689 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:27,691 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:27,692 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:27,852 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 19:10:27,873 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:27,874 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:27,874 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:27,875 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:27,973 - INFO - Saved Time Series of Total Revenue and Total Debt plot to ./data/visualizations/AAPL_revenue_debt_time_series.png
+2024-08-16 19:10:27,973 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 19:10:27,975 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 19:10:27,977 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 19:10:27,978 - INFO - Loading data from ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 19:10:28,002 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:28,003 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:28,004 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:28,004 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:28,005 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:28,005 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:28,005 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:28,006 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:10:28,126 - INFO - Saved Historical vs. Forecasted plot to ./data/visualizations/AAPL_historical_vs_forecast.png
+2024-08-16 19:10:28,126 - INFO - Visualization creation complete.
+2024-08-16 19:10:28,232 - INFO - Successfully ran visualizations.py for ticker AAPL
+2024-08-16 19:48:14,454 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 19:48:14,470 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 19:48:14,472 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 19:48:14,474 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 19:48:14,674 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,676 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,677 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,678 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,832 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 19:48:14,852 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,853 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,853 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,854 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,950 - INFO - Saved Time Series of Total Revenue and Total Debt plot to ./data/visualizations/AAPL_revenue_debt_time_series.png
+2024-08-16 19:48:14,950 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 19:48:14,952 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 19:48:14,953 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 19:48:14,954 - INFO - Loading data from ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 19:48:14,977 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,978 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,978 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,979 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,979 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,980 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,980 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:14,980 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 19:48:15,093 - INFO - Saved Historical vs. Forecasted plot to ./data/visualizations/AAPL_historical_vs_forecast.png
+2024-08-16 19:48:15,093 - INFO - Visualization creation complete.
+2024-08-16 20:02:24,572 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 20:02:24,586 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 20:02:24,588 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 20:02:24,591 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 20:02:24,809 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:24,811 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:24,812 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:24,813 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:24,973 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 20:02:24,999 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,000 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,001 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,001 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,105 - INFO - Saved Time Series of Total Revenue and Total Debt plot to ./data/visualizations/AAPL_revenue_debt_time_series.png
+2024-08-16 20:02:25,105 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 20:02:25,107 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 20:02:25,109 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 20:02:25,110 - INFO - Loading data from ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 20:02:25,136 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,137 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,138 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,139 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,140 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,140 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,141 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,141 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:02:25,274 - INFO - Saved Historical vs. Forecasted plot to ./data/visualizations/AAPL_historical_vs_forecast.png
+2024-08-16 20:02:25,274 - INFO - Visualization creation complete.
+2024-08-16 20:05:59,417 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 20:05:59,432 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 20:05:59,434 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 20:05:59,437 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 20:05:59,652 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,653 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,655 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,655 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,812 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 20:05:59,837 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,838 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,839 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,840 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,951 - INFO - Saved Time Series of Total Revenue and Total Debt plot to ./data/visualizations/AAPL_revenue_debt_time_series.png
+2024-08-16 20:05:59,951 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 20:05:59,953 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 20:05:59,955 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 20:05:59,956 - INFO - Loading data from ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 20:05:59,986 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,987 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,988 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:05:59,989 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:06:00,115 - INFO - Saved Historical vs. Forecasted plot to ./data/visualizations/AAPL_historical_vs_forecast.png
+2024-08-16 20:06:00,115 - INFO - Visualization creation complete.
+2024-08-16 20:07:11,516 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_training_data.csv
+2024-08-16 20:07:11,529 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 20:07:11,531 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 20:07:11,533 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 20:07:11,745 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:11,747 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:11,749 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:11,749 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:11,911 - INFO - Saved Training Data Forecast vs. Actual plot to ./data/visualizations/AAPL_forecast_vs_actual.png
+2024-08-16 20:07:11,939 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:11,940 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:11,940 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:11,941 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:12,055 - INFO - Saved Time Series of Total Revenue and Total Debt plot to ./data/visualizations/AAPL_revenue_debt_time_series.png
+2024-08-16 20:07:12,056 - INFO - Loading data from ./data/loaded/AAPL_quarterly_income_statement.csv
+2024-08-16 20:07:12,057 - INFO - Loading data from ./data/loaded/AAPL_quarterly_balance_sheet.csv
+2024-08-16 20:07:12,059 - INFO - Loading data from ./data/outputs/AAPL_quarterly_income_statement_revenue_forecast.csv
+2024-08-16 20:07:12,060 - INFO - Loading data from ./data/outputs/AAPL_quarterly_balance_sheet_debt_forecast.csv
+2024-08-16 20:07:12,092 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:12,093 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:12,094 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:12,095 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-08-16 20:07:12,239 - INFO - Saved Historical vs. Forecasted plot to ./data/visualizations/AAPL_historical_vs_forecast.png
+2024-08-16 20:07:12,239 - INFO - Visualization creation complete.
